@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="48e26ccf-f637-44e7-90cf-1cb0acd8e5c1" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202001152031" />
+<BusinessFlow Guid="48e26ccf-f637-44e7-90cf-1cb0acd8e5c1" Name="EDI_TB_R3_2" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" TargetApplication="SOM" />
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="0b117905-cf83-42dd-b65a-6b804bb53ad0" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ActivityName="Activity 1" Guid="d572b827-6a7b-48b3-8fa3-2fdba43084c6" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="SOM" Guid="46ae130f-cd1a-4b61-be7a-302363eeebb7" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="SPQ" Guid="963befaf-3ae4-4f6b-9d5f-0ac6bfc33e63" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+</BusinessFlow></GingerRepositoryItem>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="d5127931-4619-453b-b215-7cabd38e7143" ItemType="Solution" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="3" LastUpdateBy="MENIK" LastUpdate="202001152025" />
+<Solution AlmType="QC" Guid="d5127931-4619-453b-b215-7cabd38e7143" Name="TDM-Demo" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ApplicationPlatforms>
+<ApplicationPlatform AppName="SOM" CoreGUID="00000000-0000-0000-0000-000000000000" Guid="e13f2f07-e69d-4776-9a91-dcc2d67f6165" GUID="00000000-0000-0000-0000-000000000000" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" />
+<ApplicationPlatform AppName="SPQ" CoreGUID="00000000-0000-0000-0000-000000000000" Description="WebServices Application" Guid="49e7d234-fb87-45ad-bb2e-359930ee1f41" GUID="00000000-0000-0000-0000-000000000000" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+</ApplicationPlatforms>
+
+<ExecutionLoggerConfigurationSetList>
+<ExecutionLoggerConfiguration ExecutionLoggerConfigurationExecResultsFolder="~\ExecutionResults" ExecutionLoggerConfigurationIsEnabled="True" ExecutionLoggerConfigurationMaximalFolderSize="250" Guid="3e2ccf2a-c41d-48ee-94c5-b2bd9b935cdd" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedDataRepositoryMethod="TextFile" Seq="0" />
+</ExecutionLoggerConfigurationSetList>
+
+<HTMLReportsConfigurationSetList>
+<HTMLReportsConfiguration Guid="459c3a82-ea9f-4fb5-a63c-4676de382dee" HTMLReportConfigurationMaximalFolderSize="0" HTMLReportsFolder="~\HTMLReports" HTMLReportTemplatesSeq="1" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" />
+</HTMLReportsConfigurationSetList>
+</Solution></GingerRepositoryItem>
