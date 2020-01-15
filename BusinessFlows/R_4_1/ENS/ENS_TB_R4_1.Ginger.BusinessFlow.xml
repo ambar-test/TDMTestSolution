@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="b2ea10ab-d47e-4585-8b1d-7da014c57ac7" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="8" LastUpdateBy="MENIK" LastUpdate="202001152034" />
+<GingerRepositoryItem><Header ItemGuid="b2ea10ab-d47e-4585-8b1d-7da014c57ac7" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="9" LastUpdateBy="MENIK" LastUpdate="202001152050" />
 <BusinessFlow Guid="b2ea10ab-d47e-4585-8b1d-7da014c57ac7" Name="ENS_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" TargetApplication="SOM" />
@@ -8,13 +8,13 @@
 <ActivitiesGroups>
 <ActivitiesGroup Guid="0b117905-cf83-42dd-b65a-6b804bb53ad0" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ActivityName="Activity 1" Guid="66f4b3dc-761d-4abc-a2ad-570bd66202c8" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ActivityName="Activity 1" Guid="dca8e5dd-bdff-43c6-8703-e802385478de" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
 
 <TargetApplications>
 <TargetApplication AppName="SOM" Guid="f978c406-82ac-4e08-8826-44301f6fae10" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<TargetApplication AppName="SPQ" Guid="8e4efa50-2219-4fe5-b249-fcd33947337d" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="CPQ" Guid="8e4efa50-2219-4fe5-b249-fcd33947337d" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </TargetApplications>
 </BusinessFlow></GingerRepositoryItem>
