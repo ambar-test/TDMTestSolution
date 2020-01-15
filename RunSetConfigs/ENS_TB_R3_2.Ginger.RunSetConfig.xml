@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="9d60476b-a85a-4962-997b-73b45ea619ef" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152116" GingerVersion="3.5.0.0" Version="2" LastUpdateBy="MENIK" LastUpdate="202001152116" />
+<RunSetConfig Guid="9d60476b-a85a-4962-997b-73b45ea619ef" Name="ENS_TB_R3_2" ParentGuid="00000000-0000-0000-0000-000000000000">
+<GingerRunners>
+<GingerRunner Guid="f54ff246-03ab-4209-a6ba-468d443848ff" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
+<ApplicationAgents>
+<ApplicationAgent AgentID="abc1306b-6cbc-497e-8255-92830a7b0e21" AgentName="Chrome" AppID="e13f2f07-e69d-4776-9a91-dcc2d67f6165" AppName="SOM" Guid="8c244579-6611-4822-ba3e-1545513897da" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ApplicationAgent AgentID="ccb7c809-7662-46c6-bf94-d50a3905c2f4" AgentName="WebserviceAgent1" AppID="49e7d234-fb87-45ad-bb2e-359930ee1f41" AppName="CPQ" Guid="14b57362-71e7-4b04-9459-e8d69ee3e3d9" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ApplicationAgents>
+
+<BusinessFlowsRunList>
+<BusinessFlowRun BusinessFlowGuid="39d0f297-3342-4281-a535-b91c4879f55b" BusinessFlowInstanceGuid="5a0e8d3b-2a14-43c6-be9c-0b898a4cf99b" BusinessFlowIsActive="True" BusinessFlowName="ENS_TB_R3_2" Guid="70e78b5e-a3be-4614-82d5-6c8a821cd970" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</BusinessFlowsRunList>
+</GingerRunner>
+</GingerRunners>
+</RunSetConfig></GingerRepositoryItem>
