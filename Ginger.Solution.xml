@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="d5127931-4619-453b-b215-7cabd38e7143" ItemType="Solution" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="3" LastUpdateBy="MENIK" LastUpdate="202001152025" />
+<GingerRepositoryItem><Header ItemGuid="d5127931-4619-453b-b215-7cabd38e7143" ItemType="Solution" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="5" LastUpdateBy="MENIK" LastUpdate="202001152120" />
 <Solution AlmType="QC" Guid="d5127931-4619-453b-b215-7cabd38e7143" Name="TDM-Demo" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ApplicationPlatforms>
 <ApplicationPlatform AppName="SOM" CoreGUID="00000000-0000-0000-0000-000000000000" Guid="e13f2f07-e69d-4776-9a91-dcc2d67f6165" GUID="00000000-0000-0000-0000-000000000000" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" />
-<ApplicationPlatform AppName="SPQ" CoreGUID="00000000-0000-0000-0000-000000000000" Description="WebServices Application" Guid="49e7d234-fb87-45ad-bb2e-359930ee1f41" GUID="00000000-0000-0000-0000-000000000000" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
+<ApplicationPlatform AppName="CPQ" CoreGUID="00000000-0000-0000-0000-000000000000" Description="WebServices Application" Guid="49e7d234-fb87-45ad-bb2e-359930ee1f41" GUID="00000000-0000-0000-0000-000000000000" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" />
 </ApplicationPlatforms>
 
 <ExecutionLoggerConfigurationSetList>

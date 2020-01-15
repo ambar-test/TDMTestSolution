@@ -1,0 +1,1 @@
+{"Name":"EDI_TB_R4_1","StartTimeStamp":"2020-01-15T21:22:45.8813071Z","EndTimeStamp":"2020-01-15T21:23:22.9673242Z","GUID":"d6e732df-d129-483a-bb00-4307b6111d15","GingerVersion":"3.5.7.9","MachineName":"MENIK05","ExecutedbyUser":"MENIK","Elapsed":37.0860171}
