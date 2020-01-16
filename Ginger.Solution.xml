@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="d5127931-4619-453b-b215-7cabd38e7143" ItemType="Solution" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="5" LastUpdateBy="MENIK" LastUpdate="202001152120" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="d5127931-4619-453b-b215-7cabd38e7143" ItemType="Solution" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="6" LastUpdateBy="MENIK" LastUpdate="202001160954" />
 <Solution AlmType="QC" Guid="d5127931-4619-453b-b215-7cabd38e7143" Name="TDM-Demo" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ApplicationPlatforms>
 <ApplicationPlatform AppName="SOM" CoreGUID="00000000-0000-0000-0000-000000000000" Guid="e13f2f07-e69d-4776-9a91-dcc2d67f6165" GUID="00000000-0000-0000-0000-000000000000" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" />
@@ -13,4 +13,8 @@
 <HTMLReportsConfigurationSetList>
 <HTMLReportsConfiguration Guid="459c3a82-ea9f-4fb5-a63c-4676de382dee" HTMLReportConfigurationMaximalFolderSize="0" HTMLReportsFolder="~\HTMLReports" HTMLReportTemplatesSeq="1" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" />
 </HTMLReportsConfigurationSetList>
+
+<Variables>
+<VariableString Guid="8560a59a-5107-414a-92e8-19ea5ecfdef8" InitialStringValue="11223344" MappedOutputType="None" Name="GlobalToken" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</Variables>
 </Solution></GingerRepositoryItem>
