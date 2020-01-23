@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="0deb9584-6d2f-480d-8a99-dd658fcbeeb5" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="10" LastUpdateBy="MENIK" LastUpdate="202001152050" />
-<BusinessFlow Guid="0deb9584-6d2f-480d-8a99-dd658fcbeeb5" Name="EPL_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<GingerRepositoryItem><Header ItemGuid="0deb9584-6d2f-480d-8a99-dd658fcbeeb5" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="13" LastUpdateBy="MOHDKHAN" LastUpdate="202001230840" />
+<BusinessFlow Guid="0deb9584-6d2f-480d-8a99-dd658fcbeeb5" Name="EPL_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" TargetApplication="SOM" />
 </Activities>
@@ -8,7 +8,7 @@
 <ActivitiesGroups>
 <ActivitiesGroup Guid="0b117905-cf83-42dd-b65a-6b804bb53ad0" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ActivityName="Activity 1" Guid="360381c2-46ae-45ef-b09b-a0948f961d6a" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ActivityName="Activity 1" Guid="4602eb9c-b87c-48c0-aef1-bff59a171118" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>

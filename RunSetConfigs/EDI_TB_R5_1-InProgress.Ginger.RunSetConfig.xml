@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="c87a359b-4ecc-486b-ba02-be04be529f7a" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001160924" GingerVersion="3.5.0.0" Version="2" LastUpdateBy="MENIK" LastUpdate="202001160924" />
-<RunSetConfig Guid="c87a359b-4ecc-486b-ba02-be04be529f7a" Name="EDI_TB_R5_1-InProgress" ParentGuid="00000000-0000-0000-0000-000000000000">
+<GingerRepositoryItem><Header ItemGuid="c87a359b-4ecc-486b-ba02-be04be529f7a" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001160924" GingerVersion="3.5.0.0" Version="3" LastUpdateBy="MOHDKHAN" LastUpdate="202001230839" />
+<RunSetConfig Guid="c87a359b-4ecc-486b-ba02-be04be529f7a" Name="EDI_TB_R5_1-InProgress" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <GingerRunners>
 <GingerRunner Guid="6614fa96-3125-4832-ba5e-cfeeb7c30a14" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
 <ApplicationAgents>
@@ -9,7 +9,7 @@
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="fe742d9d-d11e-4422-91d5-1b441c2f40d8" BusinessFlowInstanceGuid="7b1408b3-080e-464f-b665-f85f3ab69e9c" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R5_1-InProgress" Guid="66c55b8b-283e-4a35-84ed-6089f27e8eb2" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="fe742d9d-d11e-4422-91d5-1b441c2f40d8" BusinessFlowInstanceGuid="7b1408b3-080e-464f-b665-f85f3ab69e9c" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R5_1-InProgress" Guid="b83f775c-ca77-4c1e-bc80-d19c74a0b007" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>
