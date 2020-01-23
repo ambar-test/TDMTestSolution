@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="fe742d9d-d11e-4422-91d5-1b441c2f40d8" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="36" LastUpdateBy="MOHDKHAN" LastUpdate="202001230849" />
+<GingerRepositoryItem><Header ItemGuid="fe742d9d-d11e-4422-91d5-1b441c2f40d8" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="39" LastUpdateBy="MOHDKHAN" LastUpdate="202001230930" />
 <BusinessFlow Elapsed="38741" Guid="fe742d9d-d11e-4422-91d5-1b441c2f40d8" Name="EDI_TB_R5_1-InProgress" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Create Lead" ActivityName="Create Lead" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="CPQ">
@@ -289,17 +289,17 @@
 </Acts>
 
 <Variables>
-<VariableString Guid="55e91f5f-e980-47e0-beab-5642a9cab29e" InitialStringValue="Ashkelon 5/66" MappedOutputType="None" Name="Address" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
-<VariableString Guid="83d1aa80-cee0-41dc-ab2b-bb49f3895c09" InitialStringValue="menik@amdocs.com" MappedOutputType="None" Name="UserMail" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" SetAsOutputValue="False" />
-<VariableRandomNumber Guid="ba999666-d580-446c-a546-25b23055663c" Interval="0" IsInteger="True" MappedOutputType="None" Max="50" Min="1" Name="Age" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
-<VariableSelectionList Guid="80fcc90d-b9f6-4c9d-ba29-f6c2046d8446" MappedOutputType="None" Name="UserType" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" SetAsOutputValue="False" Value="Business">
+<VariableString Guid="55e91f5f-e980-47e0-beab-5642a9cab29e" InitialStringValue="Ashkelon 5/66" MappedOutputType="None" Name="Address" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="83d1aa80-cee0-41dc-ab2b-bb49f3895c09" InitialStringValue="menik@amdocs.com" MappedOutputType="None" Name="UserMail" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableRandomNumber Guid="ba999666-d580-446c-a546-25b23055663c" Interval="0" IsInteger="True" MappedOutputType="None" Max="50" Min="1" Name="Age" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="80fcc90d-b9f6-4c9d-ba29-f6c2046d8446" MappedOutputType="None" Name="UserType" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" Publish="True" SetAsOutputValue="False" Value="Business">
 <OptionalValuesList>
 <OptionalValue Guid="0bd6040f-b132-499c-923a-1f9db3e3f85c" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Business" />
 <OptionalValue Guid="c56e6d6b-5377-4131-926d-1c2295806231" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Residential" />
 <OptionalValue Guid="5568d2ba-34ee-4709-883e-54f69fbb529b" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Consumer" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableString Guid="10e2701b-1025-46de-9208-3852a6dd2ed9" InitialStringValue="13222536648469" MappedOutputType="None" Name="Session_ID" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" SetAsInputValue="False" />
+<VariableString Guid="10e2701b-1025-46de-9208-3852a6dd2ed9" InitialStringValue="13222536648469" MappedOutputType="None" Name="Session_ID" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="New Activity" ParentType="Activity" Publish="True" />
 </Variables>
 </Activity>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="NPC Configuration_2" ActivityName="New Activity" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="b97fc973-5a8f-43e0-a3fa-addc4a3c8933" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" Publish="True" TargetApplication="SOM" />
