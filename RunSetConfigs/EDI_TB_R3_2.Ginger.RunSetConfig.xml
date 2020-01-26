@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="3a597b35-56e4-438c-8d10-6d21bb959557" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152116" GingerVersion="3.5.0.0" Version="12" LastUpdateBy="STEFENIA" LastUpdate="202001231600" />
+<GingerRepositoryItem><Header ItemGuid="3a597b35-56e4-438c-8d10-6d21bb959557" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152116" GingerVersion="3.5.0.0" Version="29" LastUpdateBy="STEFENIA" LastUpdate="202001260758" />
 <RunSetConfig Guid="3a597b35-56e4-438c-8d10-6d21bb959557" Name="EDI_TB_R3_2" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <GingerRunners>
 <GingerRunner Guid="d2248a1c-6b33-4458-9bef-34095d17fd4a" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
@@ -9,8 +9,8 @@
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="48e26ccf-f637-44e7-90cf-1cb0acd8e5c1" BusinessFlowInstanceGuid="dc0ce348-d129-4783-9040-bb72f78e4c30" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R3_2" Guid="58fe6ca0-2ec5-44ec-85ef-7ee443406fdb" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<BusinessFlowRun BusinessFlowGuid="92cc8bef-ed6e-4de9-a087-9cb1c489cfdd" BusinessFlowInstanceGuid="4b720357-68e2-4dae-9426-7cae9ee0645e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R3_2_M" Guid="7dc0f1cf-820c-48b6-9986-a02148bf2395" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="48e26ccf-f637-44e7-90cf-1cb0acd8e5c1" BusinessFlowInstanceGuid="dc0ce348-d129-4783-9040-bb72f78e4c30" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R3_2" Guid="b347385a-a790-4968-9d56-263b61920a00" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="92cc8bef-ed6e-4de9-a087-9cb1c489cfdd" BusinessFlowInstanceGuid="4b720357-68e2-4dae-9426-7cae9ee0645e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R3_2_M" Guid="179168af-4570-4fa3-8a51-3fb4125d2d60" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>

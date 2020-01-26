@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="45" LastUpdateBy="STEFENIA" LastUpdate="202001231603" />
+<GingerRepositoryItem><Header ItemGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="47" LastUpdateBy="STEFENIA" LastUpdate="202001260828" />
 <BusinessFlow Elapsed="38741" Guid="32fc9234-9d10-45cd-a42d-80efaaf268b2" Name="EDI_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Create Lead" ActivityName="Create Lead" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="CPQ">
@@ -884,93 +884,93 @@
 </Acts>
 
 <Variables>
-<VariableString Description="Sample : &quot;23 INVERNESS WAY E&quot;" Guid="909e45e3-94a5-4ad2-8498-b8d3dc08547a" InitialStringValue="871 GRAND ARMY HWY" MappedOutputType="None" Name="Site Address Line1" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" />
-<VariableString Description="Sample: &quot;ENGLEWOOD&quot;" Guid="962a5ba0-5447-41bc-8b8e-aeca17897b4d" InitialStringValue="SOMERSET" MappedOutputType="None" Name="Site City" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" />
-<VariableString Description="Sample: &quot;CO&quot;" Guid="e2dadd5b-11fe-4014-a063-f49a877d1641" InitialStringValue="MA" MappedOutputType="None" Name="Site State" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" />
-<VariableString Description="80112" Guid="c0a31179-a018-4ca1-9cba-8371bd846cff" InitialStringValue="02726" MappedOutputType="None" Name="Site Zipcode" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" />
-<VariableSelectionList Guid="04a72470-a53a-4bfb-b55c-5514b9c1d220" MappedOutputType="None" Name="Static IP Version Type1" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="P2P">
+<VariableString Description="Sample : &quot;23 INVERNESS WAY E&quot;" Guid="909e45e3-94a5-4ad2-8498-b8d3dc08547a" InitialStringValue="871 GRAND ARMY HWY" MappedOutputType="None" Name="Site Address Line1" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" />
+<VariableString Description="Sample: &quot;ENGLEWOOD&quot;" Guid="962a5ba0-5447-41bc-8b8e-aeca17897b4d" InitialStringValue="SOMERSET" MappedOutputType="None" Name="Site City" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" />
+<VariableString Description="Sample: &quot;CO&quot;" Guid="e2dadd5b-11fe-4014-a063-f49a877d1641" InitialStringValue="MA" MappedOutputType="None" Name="Site State" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" />
+<VariableString Description="80112" Guid="c0a31179-a018-4ca1-9cba-8371bd846cff" InitialStringValue="02726" MappedOutputType="None" Name="Site Zipcode" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Guid="04a72470-a53a-4bfb-b55c-5514b9c1d220" MappedOutputType="None" Name="Static IP Version Type1" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="P2P">
 <OptionalValuesList>
 <OptionalValue Guid="d3a7afa1-b064-42cd-bc05-1a9120d71256" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 <OptionalValue Guid="91668101-61aa-4738-9207-5be50526826a" ParentGuid="00000000-0000-0000-0000-000000000000" Value="P2P" />
 <OptionalValue Guid="819e6c32-bdb2-4199-b20d-923e59294eaf" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer_IP_Block" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Guid="6debcd4d-6511-4b96-ade5-5d17856e436f" MappedOutputType="None" Name="Static IP Version Type2" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Guid="6debcd4d-6511-4b96-ade5-5d17856e436f" MappedOutputType="None" Name="Static IP Version Type2" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="26c5bf64-ebf3-4c64-8203-36948d9f7ac7" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 <OptionalValue Guid="d46edaa1-2f5e-4e6c-98f4-e7c9104a3093" ParentGuid="00000000-0000-0000-0000-000000000000" Value="P2P" />
 <OptionalValue Guid="8593023d-037c-4275-9b25-5ad05d5dd733" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer_IP_Block" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Guid="2e0227f9-52f4-43fe-a663-7eb96e01752f" MappedOutputType="None" Name="Static IP Version Type3" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Guid="2e0227f9-52f4-43fe-a663-7eb96e01752f" MappedOutputType="None" Name="Static IP Version Type3" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="4be51dae-95a5-4e44-9835-17e280951f66" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 <OptionalValue Guid="58ae1d7c-af67-4aa2-867f-f3f746283f16" ParentGuid="00000000-0000-0000-0000-000000000000" Value="P2P" />
 <OptionalValue Guid="52961354-0680-48e8-b13a-fde0966ac209" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer_IP_Block" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Guid="21574efd-462d-4bd0-a5f9-c3b8218b484e" MappedOutputType="None" Name="Static IP Version Type4" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Guid="21574efd-462d-4bd0-a5f9-c3b8218b484e" MappedOutputType="None" Name="Static IP Version Type4" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="a87a9d35-447e-4dad-93fa-a83f38fa663e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 <OptionalValue Guid="55a149eb-ebb5-4628-9fe2-4e28252401ef" ParentGuid="00000000-0000-0000-0000-000000000000" Value="P2P" />
 <OptionalValue Guid="0569f1de-9181-4296-b8b3-16db3022f96d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer_IP_Block" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Guid="e6c49950-a780-4dfb-b4bd-6aa529a98211" MappedOutputType="None" Name="Static IP Provider1" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="Comcast">
+<VariableSelectionList Guid="e6c49950-a780-4dfb-b4bd-6aa529a98211" MappedOutputType="None" Name="Static IP Provider1" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="Comcast">
 <OptionalValuesList>
 <OptionalValue Guid="379f257b-8fd9-4718-a8cb-22de8d720a47" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Comcast" />
 <OptionalValue Guid="2016d161-bd06-475b-a883-da18b9bf2bf6" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Guid="8d6f7e96-efd5-4d06-b7a0-be685e9f40c4" MappedOutputType="None" Name="Static IP Provider2" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Guid="8d6f7e96-efd5-4d06-b7a0-be685e9f40c4" MappedOutputType="None" Name="Static IP Provider2" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="1bd5121e-205e-4817-88dc-ae915ec5a179" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Comcast" />
 <OptionalValue Guid="a34fcf81-d27c-4e04-83ff-519a4a462f10" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer" />
 <OptionalValue Guid="f20a125d-86b8-4637-90f9-600be3dfd7eb" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Guid="4c08f5a4-397b-4e6f-bfd8-a564cdb51e52" MappedOutputType="None" Name="Static IP Provider3" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Guid="4c08f5a4-397b-4e6f-bfd8-a564cdb51e52" MappedOutputType="None" Name="Static IP Provider3" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="1c90771b-da5f-4146-b022-8f6760525575" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Comcast" />
 <OptionalValue Guid="fd8b4874-f9d6-4420-8d70-21e4db4f2058" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer" />
 <OptionalValue Guid="17e55623-51e5-4c8c-87a9-a9d60f56e6e5" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Guid="45c49d24-863a-4da8-9e9a-e3ef3b2b2a9f" MappedOutputType="None" Name="Static IP Provider4" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Guid="45c49d24-863a-4da8-9e9a-e3ef3b2b2a9f" MappedOutputType="None" Name="Static IP Provider4" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="8f4e2a4d-98b6-4f15-b404-3f909a3d563e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Comcast" />
 <OptionalValue Guid="148f74e1-03b0-4dfb-b97a-6380fc2cfabc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer" />
 <OptionalValue Guid="c7aaaaae-87a4-4631-b8f3-0cb95d3c897f" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Calendar.xsl/WUAT_BGP/EVCEndpoint_IPVersion_1&#xD;&#xA;" Guid="46adc4d6-ddfb-4252-a528-bf8d57e7f84b" MappedOutputType="None" Name="Static IP Version1" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="IPv4">
+<VariableSelectionList Description="Calendar.xsl/WUAT_BGP/EVCEndpoint_IPVersion_1&#xD;&#xA;" Guid="46adc4d6-ddfb-4252-a528-bf8d57e7f84b" MappedOutputType="None" Name="Static IP Version1" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="IPv4">
 <OptionalValuesList>
 <OptionalValue Guid="33ceb016-0bcf-493c-8b8f-42503c9c60b3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IPv4" />
 <OptionalValue Guid="23e43f8b-a805-468f-9e34-e549da0fe1e8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IPv6" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Calendar.xsl/WUAT_BGP/EVCEndpoint_IPVersion_2&#xD;&#xA;" Guid="ad136e08-4f6b-4c06-98d9-fce886f2a7ec" MappedOutputType="None" Name="Static IP Version2" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Description="Calendar.xsl/WUAT_BGP/EVCEndpoint_IPVersion_2&#xD;&#xA;" Guid="ad136e08-4f6b-4c06-98d9-fce886f2a7ec" MappedOutputType="None" Name="Static IP Version2" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="e45872d8-9c55-4733-ad42-6f9efc26357e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 <OptionalValue Guid="9075d4e9-a43b-4fcf-85fd-33c3fb3e61b4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IPv4" />
 <OptionalValue Guid="8978ad10-71b3-49f1-9ab4-5ce24217f822" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IPv6" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Calendar.xsl/WUAT_BGP/EVCEndpoint_IPVersion_3&#xD;&#xA;" Guid="72233c73-e7ac-4c81-a551-e036bd989cf8" MappedOutputType="None" Name="Static IP Version3" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Description="Calendar.xsl/WUAT_BGP/EVCEndpoint_IPVersion_3&#xD;&#xA;" Guid="72233c73-e7ac-4c81-a551-e036bd989cf8" MappedOutputType="None" Name="Static IP Version3" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="cf18d0ec-1e28-49da-bb27-8682326902f9" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IPv4" />
 <OptionalValue Guid="cfb55826-632b-4d0b-ac23-971a4dd4ba44" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IPv6" />
 <OptionalValue Guid="0f014248-6b7e-4dfa-a348-1c75dd362878" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Calendar.xsl/WUAT_BGP/EVCEndpoint_IPVersion_4&#xD;&#xA;" Guid="4fbce3d0-a0ed-4aec-9d00-4d0fde238186" MappedOutputType="None" Name="Static IP Version4" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Description="Calendar.xsl/WUAT_BGP/EVCEndpoint_IPVersion_4&#xD;&#xA;" Guid="4fbce3d0-a0ed-4aec-9d00-4d0fde238186" MappedOutputType="None" Name="Static IP Version4" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="88e4cee7-4066-4315-882f-211714a13827" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IPv4" />
 <OptionalValue Guid="73cd7a7a-6be2-419f-9228-30880c52d63d" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IPv6" />
 <OptionalValue Guid="c2793091-3be1-4640-b6de-f3b797a8f77f" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Need to use valid combination.&#xD;&#xA;Sample: P2P,Comcast,IPV4&#xD;&#xA;Valid quantity:&#xD;&#xA;/30&#xD;&#xA;/29" Guid="ab977165-63d5-4bb5-b852-f731f3b7c696" MappedOutputType="None" Name="Static IP Quantity1" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="/30">
+<VariableSelectionList Description="Need to use valid combination.&#xD;&#xA;Sample: P2P,Comcast,IPV4&#xD;&#xA;Valid quantity:&#xD;&#xA;/30&#xD;&#xA;/29" Guid="ab977165-63d5-4bb5-b852-f731f3b7c696" MappedOutputType="None" Name="Static IP Quantity1" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="/30">
 <OptionalValuesList>
 <OptionalValue Guid="1e087b30-165a-4be8-b515-d5329bb8b1e4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/30" />
 <OptionalValue Guid="6008647e-9720-4858-89c5-780cf0100759" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/29" />
@@ -994,7 +994,7 @@
 <OptionalValue Guid="8c3ef77a-b91a-4c60-82ef-43fd6163b40b" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/48" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Need to use valid combination.&#xD;&#xA;Sample: P2P,Comcast,IPV4&#xD;&#xA;Valid quantity:&#xD;&#xA;/30&#xD;&#xA;/29" Guid="1ac57abb-7f66-439f-9f39-96f6c4d72f6d" MappedOutputType="None" Name="Static IP Quantity2" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Description="Need to use valid combination.&#xD;&#xA;Sample: P2P,Comcast,IPV4&#xD;&#xA;Valid quantity:&#xD;&#xA;/30&#xD;&#xA;/29" Guid="1ac57abb-7f66-439f-9f39-96f6c4d72f6d" MappedOutputType="None" Name="Static IP Quantity2" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="a7e8a588-d4e9-4297-ae06-21ae7de890f2" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/30" />
 <OptionalValue Guid="05863d77-4b54-426d-adb8-6fe4f53a5e73" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/29" />
@@ -1019,7 +1019,7 @@
 <OptionalValue Guid="f381eb1a-08be-4907-b64f-9e0965e056a9" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Need to use valid combination.&#xD;&#xA;Sample: P2P,Comcast,IPV4&#xD;&#xA;Valid quantity:&#xD;&#xA;/30&#xD;&#xA;/29" Guid="3a93fc94-e0fb-4f7a-8f4d-a931156407fd" MappedOutputType="None" Name="Static IP Quantity3" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Description="Need to use valid combination.&#xD;&#xA;Sample: P2P,Comcast,IPV4&#xD;&#xA;Valid quantity:&#xD;&#xA;/30&#xD;&#xA;/29" Guid="3a93fc94-e0fb-4f7a-8f4d-a931156407fd" MappedOutputType="None" Name="Static IP Quantity3" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="5cca7bfd-e69c-4dc4-9662-f6948ce48152" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/30" />
 <OptionalValue Guid="3501ba81-1252-4f72-b31d-2c90b67c3840" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/29" />
@@ -1044,7 +1044,7 @@
 <OptionalValue Guid="69606621-25e1-4284-b5b1-262cd0a408c9" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Need to use valid combination.&#xD;&#xA;Sample: P2P,Comcast,IPV4&#xD;&#xA;Valid quantity:&#xD;&#xA;/30&#xD;&#xA;/29" Guid="54784261-1faf-4ba7-8334-b527e56065c7" MappedOutputType="None" Name="Static IP Quantity4" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
+<VariableSelectionList Description="Need to use valid combination.&#xD;&#xA;Sample: P2P,Comcast,IPV4&#xD;&#xA;Valid quantity:&#xD;&#xA;/30&#xD;&#xA;/29" Guid="54784261-1faf-4ba7-8334-b527e56065c7" MappedOutputType="None" Name="Static IP Quantity4" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NA">
 <OptionalValuesList>
 <OptionalValue Guid="30175460-81fa-434a-b527-b5a4b5331676" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/30" />
 <OptionalValue Guid="34027d1c-4dd0-49b7-9d22-dec8f3c4b693" ParentGuid="00000000-0000-0000-0000-000000000000" Value="/29" />
@@ -1069,7 +1069,7 @@
 <OptionalValue Guid="4421ecd7-9547-49ed-8799-314e981c3026" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Guid="c58487a9-ef66-487e-9aea-d06f843f1beb" MappedOutputType="None" Name="Bandwidth Mbps" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="100">
+<VariableSelectionList Guid="c58487a9-ef66-487e-9aea-d06f843f1beb" MappedOutputType="None" Name="Bandwidth Mbps" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="100">
 <OptionalValuesList>
 <OptionalValue Guid="eb9976e1-e0c5-49db-9255-f0cf9fa2f793" ParentGuid="00000000-0000-0000-0000-000000000000" Value="1" />
 <OptionalValue Guid="921550bb-5fef-4390-8a17-2b513cb4677b" ParentGuid="00000000-0000-0000-0000-000000000000" Value="2" />
@@ -1123,7 +1123,7 @@
 <OptionalValue Guid="eaf21748-eab0-4a21-a672-00908d1c0288" ParentGuid="00000000-0000-0000-0000-000000000000" Value="100000" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Sample: for selected badwidth; 10-100 Mbps, the valid options for &quot;Phisical Interface Type&quot; is only: 100Base_TX" Guid="b02f511b-8570-47ae-ac6b-d2edda140e34" MappedOutputType="None" Name="Phisical Interface Type" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="1000Base_SX">
+<VariableSelectionList Description="Sample: for selected badwidth; 10-100 Mbps, the valid options for &quot;Phisical Interface Type&quot; is only: 100Base_TX" Guid="b02f511b-8570-47ae-ac6b-d2edda140e34" MappedOutputType="None" Name="Phisical Interface Type" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="1000Base_SX">
 <OptionalValuesList>
 <OptionalValue Guid="5cdb1f6e-e782-403a-b0d6-3882a1ff75b4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="100Base_TX" />
 <OptionalValue Guid="c195c725-6d02-4daa-a52a-d42000b33587" ParentGuid="00000000-0000-0000-0000-000000000000" Value="10Gbase_SR" />
@@ -1138,13 +1138,13 @@
 <OptionalValue Guid="bdc99cbe-6106-4d68-8107-8106113c1218" ParentGuid="00000000-0000-0000-0000-000000000000" Value="1000Base_ZR" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Guid="2613441f-57fb-44e4-ab97-5304d04024ed" MappedOutputType="None" Name="Term Length (months)" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="36">
+<VariableSelectionList Guid="2613441f-57fb-44e4-ab97-5304d04024ed" MappedOutputType="None" Name="Term Length (months)" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="36">
 <OptionalValuesList>
 <OptionalValue Guid="cdad0bba-baa2-47c8-981d-752f13b4bd6e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="24" />
 <OptionalValue Guid="7cb7a557-a0a4-4a63-8c03-577d38e87b8e" ParentGuid="00000000-0000-0000-0000-000000000000" Value="36" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableSelectionList Description="Execute the Flow until which End-point stop?" Guid="f847c42a-534a-47e5-ad90-707e3c1eaa9c" MappedOutputType="None" Name="Execute Till" ParentGuid="efacb625-a36c-45dc-96f7-9c4b165f9fd3" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="Submit To Delivery ">
+<VariableSelectionList Description="Execute the Flow until which End-point stop?" Guid="f847c42a-534a-47e5-ad90-707e3c1eaa9c" MappedOutputType="None" Name="Execute Till" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Overwiting_Excel_For_TDM" ParentType="Step" Publish="True" SetAsOutputValue="False" Value="NB- Entire Flow">
 <OptionalValuesList>
 <OptionalValue Guid="29f9f851-80c4-4902-a70d-a5bae217de0b" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Submit To Delivery " />
 <OptionalValue Guid="d9b8512c-d834-4918-a76d-5af8961fefc6" ParentGuid="00000000-0000-0000-0000-000000000000" Value="WFX" />
@@ -1364,17 +1364,17 @@
 </Acts>
 
 <Variables>
-<VariableString Guid="55e91f5f-e980-47e0-beab-5642a9cab29e" InitialStringValue="Ashkelon 5/66" MappedOutputType="None" Name="Address" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
-<VariableString Guid="83d1aa80-cee0-41dc-ab2b-bb49f3895c09" InitialStringValue="menik@amdocs.com" MappedOutputType="None" Name="UserMail" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
-<VariableRandomNumber Guid="ba999666-d580-446c-a546-25b23055663c" Interval="0" IsInteger="True" MappedOutputType="None" Max="50" Min="1" Name="Age" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
-<VariableSelectionList Guid="80fcc90d-b9f6-4c9d-ba29-f6c2046d8446" MappedOutputType="None" Name="UserType" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" Value="Business">
+<VariableString Guid="55e91f5f-e980-47e0-beab-5642a9cab29e" InitialStringValue="Ashkelon 5/66" MappedOutputType="None" Name="Address" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Step" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="83d1aa80-cee0-41dc-ab2b-bb49f3895c09" InitialStringValue="menik@amdocs.com" MappedOutputType="None" Name="UserMail" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Step" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableRandomNumber Guid="ba999666-d580-446c-a546-25b23055663c" Interval="0" IsInteger="True" MappedOutputType="None" Max="50" Min="1" Name="Age" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Step" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableSelectionList Guid="80fcc90d-b9f6-4c9d-ba29-f6c2046d8446" MappedOutputType="None" Name="UserType" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Step" SetAsInputValue="False" SetAsOutputValue="False" Value="Business">
 <OptionalValuesList>
 <OptionalValue Guid="0bd6040f-b132-499c-923a-1f9db3e3f85c" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Business" />
 <OptionalValue Guid="c56e6d6b-5377-4131-926d-1c2295806231" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Residential" />
 <OptionalValue Guid="5568d2ba-34ee-4709-883e-54f69fbb529b" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Consumer" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableString Guid="10e2701b-1025-46de-9208-3852a6dd2ed9" InitialStringValue="13222536648469" MappedOutputType="None" Name="Session_ID" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Activity" SetAsInputValue="False" />
+<VariableString Guid="10e2701b-1025-46de-9208-3852a6dd2ed9" InitialStringValue="13222536648469" MappedOutputType="None" Name="Session_ID" ParentGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ParentName="Site Servey" ParentType="Step" SetAsInputValue="False" />
 </Variables>
 </Activity>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="NPC Configuration_2" ActivityName="New Activity" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="b97fc973-5a8f-43e0-a3fa-addc4a3c8933" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="0%" Publish="True" TargetApplication="SOM" />
@@ -1555,10 +1555,10 @@
 </TargetApplications>
 
 <Variables>
-<VariableString Guid="c1382d43-b518-4215-a8a7-00b38ec2a444" InitialStringValue="7575449510" MappedOutputType="None" Name="ID" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Business Flow" SetAsInputValue="False" SetAsOutputValue="False" />
-<VariableString Guid="9e078440-d884-4198-a3af-a16c61650c94" InitialStringValue="F01d89fd-5155-5455-5585- e84ab8de8591" MappedOutputType="None" Name="Key" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Business Flow" SetAsInputValue="False" SetAsOutputValue="False" />
-<VariableString Guid="8d705240-fb1a-446f-bccb-521321469a5d" MappedOutputType="None" Name="Company" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Business Flow" SetAsInputValue="False" SetAsOutputValue="False" />
-<VariableSelectionList Guid="d4c8d792-e14d-409f-b9b1-612ecb4523be" MappedOutputType="None" Name="Country" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Business Flow" SetAsInputValue="False" SetAsOutputValue="False" Value="United States">
+<VariableString Guid="c1382d43-b518-4215-a8a7-00b38ec2a444" InitialStringValue="7575449510" MappedOutputType="None" Name="ID" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Sub Business Process" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="9e078440-d884-4198-a3af-a16c61650c94" InitialStringValue="F01d89fd-5155-5455-5585- e84ab8de8591" MappedOutputType="None" Name="Key" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Sub Business Process" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="8d705240-fb1a-446f-bccb-521321469a5d" MappedOutputType="None" Name="Company" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Sub Business Process" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableSelectionList Guid="d4c8d792-e14d-409f-b9b1-612ecb4523be" MappedOutputType="None" Name="Country" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Sub Business Process" SetAsInputValue="False" SetAsOutputValue="False" Value="United States">
 <OptionalValuesList>
 <OptionalValue Guid="e8c9c255-72f8-4717-9f07-4c4cf9b257f4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="France" />
 <OptionalValue Guid="fff6e9a5-9d49-4542-a4b1-95b7474ea4b0" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Italy" />
