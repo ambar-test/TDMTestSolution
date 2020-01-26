@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="3a597b35-56e4-438c-8d10-6d21bb959557" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152116" GingerVersion="3.5.0.0" Version="29" LastUpdateBy="STEFENIA" LastUpdate="202001260758" />
-<RunSetConfig Guid="3a597b35-56e4-438c-8d10-6d21bb959557" Name="EDI_TB_R3_2" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
+<GingerRepositoryItem><Header ItemGuid="3a597b35-56e4-438c-8d10-6d21bb959557" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152116" GingerVersion="3.5.0.0" Version="31" LastUpdateBy="STEFENIA" LastUpdate="202001260916" />
+<RunSetConfig Guid="3a597b35-56e4-438c-8d10-6d21bb959557" Name="BP_EDI_TB_R3_2" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <GingerRunners>
 <GingerRunner Guid="d2248a1c-6b33-4458-9bef-34095d17fd4a" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
 <ApplicationAgents>
@@ -9,8 +9,8 @@
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="48e26ccf-f637-44e7-90cf-1cb0acd8e5c1" BusinessFlowInstanceGuid="dc0ce348-d129-4783-9040-bb72f78e4c30" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R3_2" Guid="b347385a-a790-4968-9d56-263b61920a00" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<BusinessFlowRun BusinessFlowGuid="92cc8bef-ed6e-4de9-a087-9cb1c489cfdd" BusinessFlowInstanceGuid="4b720357-68e2-4dae-9426-7cae9ee0645e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R3_2_M" Guid="179168af-4570-4fa3-8a51-3fb4125d2d60" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="48e26ccf-f637-44e7-90cf-1cb0acd8e5c1" BusinessFlowInstanceGuid="dc0ce348-d129-4783-9040-bb72f78e4c30" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R3_2" Guid="3abfa12f-80e6-444a-8c74-0cf81a275e39" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="92cc8bef-ed6e-4de9-a087-9cb1c489cfdd" BusinessFlowInstanceGuid="4b720357-68e2-4dae-9426-7cae9ee0645e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R3_2_M" Guid="f4582d9b-b727-42b1-a233-58fd65a75a4d" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>

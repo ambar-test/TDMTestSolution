@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="356dc390-c1d3-45b5-b934-38b6552bc9eb" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152118" GingerVersion="3.5.0.0" Version="9" LastUpdateBy="MOHDKHAN" LastUpdate="202001230849" />
-<RunSetConfig Guid="356dc390-c1d3-45b5-b934-38b6552bc9eb" Name="EPL_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
+<GingerRepositoryItem><Header ItemGuid="356dc390-c1d3-45b5-b934-38b6552bc9eb" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152118" GingerVersion="3.5.0.0" Version="11" LastUpdateBy="STEFENIA" LastUpdate="202001260919" />
+<RunSetConfig Guid="356dc390-c1d3-45b5-b934-38b6552bc9eb" Name="BP_EPL_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <GingerRunners>
 <GingerRunner Guid="1bc51ea7-e213-475f-9568-46c2df574e3c" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
 <ApplicationAgents>
@@ -9,7 +9,7 @@
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="0deb9584-6d2f-480d-8a99-dd658fcbeeb5" BusinessFlowInstanceGuid="3edbfe8e-6e4d-414c-91ac-ed98cd62b1de" BusinessFlowIsActive="True" BusinessFlowName="EPL_TB_R4_1" Guid="afb3af25-1279-43c7-a19a-8260d510fea5" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="0deb9584-6d2f-480d-8a99-dd658fcbeeb5" BusinessFlowInstanceGuid="3edbfe8e-6e4d-414c-91ac-ed98cd62b1de" BusinessFlowIsActive="True" BusinessFlowName="EPL_TB_R4_1" Guid="64044671-e0e1-4e68-aabd-76af163895eb" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>
