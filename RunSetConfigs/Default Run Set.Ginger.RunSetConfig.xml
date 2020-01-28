@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="a8f76d9f-a47e-4db4-9f79-9e8d763bfc2c" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152114" GingerVersion="3.5.0.0" Version="14" LastUpdateBy="STEFENIA" LastUpdate="202001260917" />
+<GingerRepositoryItem><Header ItemGuid="a8f76d9f-a47e-4db4-9f79-9e8d763bfc2c" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152114" GingerVersion="3.5.0.0" Version="81" LastUpdateBy="MENIK" LastUpdate="202001282102" />
 <RunSetConfig Guid="a8f76d9f-a47e-4db4-9f79-9e8d763bfc2c" Name="BP_BI_Core4_R3_2" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <GingerRunners>
 <GingerRunner Guid="c4fefc54-c8da-4edd-993a-e2f6ea84089e" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
@@ -9,8 +9,23 @@
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" BusinessFlowInstanceGuid="584d9012-0f0c-4b83-908f-f1d9f3abf18e" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2" Guid="a738c6e4-b1ee-4d7b-84a2-db5ca0846548" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" BusinessFlowInstanceGuid="584d9012-0f0c-4b83-908f-f1d9f3abf18e" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2" Guid="c2140e3d-207e-4c3f-ad3c-5a3d97289686" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>
+
+<RunSetActions>
+<RunSetActionHTMLReportSendEmail Condition="AlwaysRun" Guid="7c28f807-9a36-406b-83b5-b2aa98f0ce19" HTMLReportTemplate="HTMLReport" MailFrom="menik@amdocs.com" MailTo="menik@amdocs.com" Name="Send HTML Report Email" ParentGuid="00000000-0000-0000-0000-000000000000" RunAt="ExecutionEnd" selectedHTMLReportTemplateID="2" Subject="DEV- TDM Report">
+<Email>
+<Email EmailMethod="SMTP" Guid="008a6a24-b864-4b92-a8d3-68edd231d03a" ParentGuid="00000000-0000-0000-0000-000000000000" SMTPMailHost="ilmail" SMTPPort="25">
+<Attachments>
+</Attachments>
+</Email>
+</Email>
+
+<EmailAttachments>
+<EmailHtmlReportAttachment AttachmentType="Report" ExtraInformation="\\ilrnaginger02\GingerExecuterAgent\Reports" Guid="4a122fee-17f8-4e5a-9c95-de398aed5e59" IsAlternameFolderUsed="True" IsLinkEnabled="True" Name="TDM_Template" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedHTMLReportTemplateID="2" ZipIt="True" />
+</EmailAttachments>
+</RunSetActionHTMLReportSendEmail>
+</RunSetActions>
 </RunSetConfig></GingerRepositoryItem>
