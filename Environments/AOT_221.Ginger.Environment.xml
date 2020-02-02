@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="b7ca5289-d0f7-4220-ac3f-f0de95576873" ItemType="ProjEnvironment" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="8" LastUpdateBy="MENIK" LastUpdate="202002020855" />
+<ProjEnvironment Guid="b7ca5289-d0f7-4220-ac3f-f0de95576873" Name="AOT_221" ParentGuid="00000000-0000-0000-0000-000000000000">
+<Applications>
+<EnvApplication Active="True" Guid="9092dc82-81be-4a52-9bf9-7fddd2efc6c5" Name="SOM" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</Applications>
+</ProjEnvironment></GingerRepositoryItem>

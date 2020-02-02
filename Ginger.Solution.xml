@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="d5127931-4619-453b-b215-7cabd38e7143" ItemType="Solution" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="6" LastUpdateBy="MENIK" LastUpdate="202001160954" />
+<GingerRepositoryItem><Header ItemGuid="d5127931-4619-453b-b215-7cabd38e7143" ItemType="Solution" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="8" LastUpdateBy="MENIK" LastUpdate="202002020857" />
 <Solution AlmType="QC" Guid="d5127931-4619-453b-b215-7cabd38e7143" Name="TDM-Demo" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ApplicationPlatforms>
 <ApplicationPlatform AppName="SOM" CoreGUID="00000000-0000-0000-0000-000000000000" Guid="e13f2f07-e69d-4776-9a91-dcc2d67f6165" GUID="00000000-0000-0000-0000-000000000000" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" />
@@ -11,10 +11,18 @@
 </ExecutionLoggerConfigurationSetList>
 
 <HTMLReportsConfigurationSetList>
-<HTMLReportsConfiguration Guid="459c3a82-ea9f-4fb5-a63c-4676de382dee" HTMLReportConfigurationMaximalFolderSize="0" HTMLReportsFolder="~\HTMLReports" HTMLReportTemplatesSeq="1" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" />
+<HTMLReportsConfiguration Guid="459c3a82-ea9f-4fb5-a63c-4676de382dee" HTMLReportConfigurationMaximalFolderSize="0" HTMLReportsFolder="~\HTMLReports" HTMLReportTemplatesSeq="2" IsSelected="True" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" />
 </HTMLReportsConfigurationSetList>
 
 <Variables>
 <VariableString Guid="8560a59a-5107-414a-92e8-19ea5ecfdef8" InitialStringValue="11223344" MappedOutputType="None" Name="GlobalToken" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<VariableString Guid="e140e81a-f7a9-4462-9857-ff03be9e074e" InitialStringValue="aaa" MappedOutputType="None" Name="GlobalName" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+<VariableSelectionList Guid="a30b18e9-8611-4b3d-8f29-c87a82437ba8" MappedOutputType="None" Name="GlobalType" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Value="AA">
+<OptionalValuesList>
+<OptionalValue Guid="c9fc0c30-a546-4fc1-98f5-d601cd02f226" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AA" />
+<OptionalValue Guid="377d1af5-660c-4b79-acb7-6fbd57acf1f3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="BB" />
+<OptionalValue Guid="85d182bd-fe1a-4f87-a2e8-5d66ffc08886" ParentGuid="00000000-0000-0000-0000-000000000000" Value="CC" />
+</OptionalValuesList>
+</VariableSelectionList>
 </Variables>
 </Solution></GingerRepositoryItem>
