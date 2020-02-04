@@ -1,15 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="a8f76d9f-a47e-4db4-9f79-9e8d763bfc2c" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152114" GingerVersion="3.5.0.0" Version="82" LastUpdateBy="MENIK" LastUpdate="202002020858" />
+<GingerRepositoryItem><Header ItemGuid="a8f76d9f-a47e-4db4-9f79-9e8d763bfc2c" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152114" GingerVersion="3.5.0.0" Version="84" LastUpdateBy="MENIK" LastUpdate="202002041727" />
 <RunSetConfig Guid="a8f76d9f-a47e-4db4-9f79-9e8d763bfc2c" Name="BP_BI_Core4_R3_2" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <GingerRunners>
 <GingerRunner Guid="c4fefc54-c8da-4edd-993a-e2f6ea84089e" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall" SpecificEnvironmentName="TTR_445" UseSpecificEnvironment="True">
 <ApplicationAgents>
-<ApplicationAgent AgentID="abc1306b-6cbc-497e-8255-92830a7b0e21" AgentName="Chrome" AppID="e13f2f07-e69d-4776-9a91-dcc2d67f6165" AppName="SOM" Guid="a69d8422-d8a7-4f5a-86aa-96802b664e5f" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ApplicationAgent AgentID="ccb7c809-7662-46c6-bf94-d50a3905c2f4" AgentName="WebserviceAgent1" AppID="49e7d234-fb87-45ad-bb2e-359930ee1f41" AppName="CPQ" Guid="ba31836f-cfcf-411a-bdae-2720a50f04ac" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ApplicationAgent AgentID="abc1306b-6cbc-497e-8255-92830a7b0e21" AgentName="Chrome" AppID="e13f2f07-e69d-4776-9a91-dcc2d67f6165" AppName="SOM" Guid="eae85729-fa36-43ac-b442-6ce30ebac736" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ApplicationAgent AgentID="ccb7c809-7662-46c6-bf94-d50a3905c2f4" AgentName="WebserviceAgent1" AppID="49e7d234-fb87-45ad-bb2e-359930ee1f41" AppName="CPQ" Guid="3938b500-812e-4070-9a69-e4b6a38ae349" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" BusinessFlowInstanceGuid="584d9012-0f0c-4b83-908f-f1d9f3abf18e" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2" Guid="32b9bce2-74f3-4573-9324-4aaf9616a2bc" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" BusinessFlowInstanceGuid="8b6c2ed4-0159-470e-bf7c-b0f2574e20f1" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2" Guid="494ed334-df66-4015-8401-3fdc8a5460a5" ParentGuid="00000000-0000-0000-0000-000000000000">
+<BusinessFlowCustomizedRunVariables>
+<VariableSelectionList Description="Set 'Yes' for performing Multiply calculation" DiffrentFromOrigin="True" Guid="ae0a73da-817b-435b-8f92-a960412e7ed1" MappedOutputType="None" Name="DoMultiply?" ParentGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" ParentName="BI_Core4_R3_2" ParentType="Sub Business Process" Publish="True" SetAsOutputValue="False" Value="No" VarValChanged="True">
+<OptionalValuesList>
+<OptionalValue Guid="5c8fc0a1-9a8c-4940-987c-c0db04c28fbd" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Yes" />
+<OptionalValue Guid="fb28e3b0-2517-4941-ba0b-83690124a3e4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="No" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableString Description="Number to use for Nultiply with MainNum" DiffrentFromOrigin="True" Guid="5b9df897-4201-4895-9d47-d1fe81c4a0a0" InitialStringValue="12" MappedOutputType="None" Name="SecondNum_ForMultiply" ParentGuid="cb800179-fa3c-46fa-9c38-4c9c605ab149" ParentName="BI_Core4_R3_2\Multiply\Do Multiply" ParentType="Step" Publish="True" SetAsOutputValue="False" VarValChanged="True" />
+</BusinessFlowCustomizedRunVariables>
+</BusinessFlowRun>
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>
