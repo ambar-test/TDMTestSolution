@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="d6e732df-d129-483a-bb00-4307b6111d15" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152117" GingerVersion="3.5.0.0" Version="52" LastUpdateBy="NATISHAK" LastUpdate="202003060936" />
+<GingerRepositoryItem><Header ItemGuid="d6e732df-d129-483a-bb00-4307b6111d15" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152117" GingerVersion="3.5.0.0" Version="53" LastUpdateBy="NATISHAK" LastUpdate="202003060953" />
 <RunSetConfig Guid="d6e732df-d129-483a-bb00-4307b6111d15" Name="BP_EDI_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" RunWithAnalyzer="False">
 <GingerRunners>
 <GingerRunner Guid="cb4d3d67-c2b9-4f71-930f-4eac07ecc603" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall" SpecificEnvironmentName="TTR_445" UseSpecificEnvironment="True">
@@ -9,8 +9,8 @@
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" BusinessFlowInstanceGuid="05dcc1e7-779a-4018-a4be-50073323574e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R4_1" Guid="1499a845-5108-428a-966b-5c51fafc99af" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<BusinessFlowRun BusinessFlowGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" BusinessFlowInstanceGuid="e092e436-8f3a-421a-8388-022206ed3b7d" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2_Copy" Guid="6835efec-e300-4f7a-ab2e-ac8ff33e7c1d" ParentGuid="00000000-0000-0000-0000-000000000000">
+<BusinessFlowRun BusinessFlowGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" BusinessFlowInstanceGuid="05dcc1e7-779a-4018-a4be-50073323574e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R4_1" Guid="3f54e32d-9012-4ae6-9107-a3c57813b5bd" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" BusinessFlowInstanceGuid="e092e436-8f3a-421a-8388-022206ed3b7d" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2_Copy" Guid="f327ca80-4eb9-4d09-9dae-d12f7c74a217" ParentGuid="00000000-0000-0000-0000-000000000000">
 <BusinessFlowCustomizedRunVariables>
 <VariableString DiffrentFromOrigin="True" Guid="d4e2627d-0cc6-4796-8096-34ad74807046" InitialStringValue="abc" MappedOutputType="None" Name="Activity Variable" ParentGuid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentName="BI_Core4_R3_2_Copy\RandomCalc\Do RandomCalc" ParentType="Activity" Publish="True" VarValChanged="True" />
 <VariableDynamic DiffrentFromOrigin="True" Guid="52ed627b-d53b-480b-b8f9-6b69e6e7dae7" MappedOutputType="None" Name="New Variable Dynamic" ParentGuid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentName="BI_Core4_R3_2_Copy\RandomCalc\Do RandomCalc" ParentType="Activity" Publish="True" ValueExpression="45" VarValChanged="True" />
@@ -18,6 +18,21 @@
 <VariableRandomNumber DiffrentFromOrigin="True" Guid="b31f86dc-3c2d-4dfd-9979-4efe51bbdb73" Interval="1" MappedOutputType="None" Max="20" Min="1" Name="New Variable Random Number" ParentGuid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentName="BI_Core4_R3_2_Copy\RandomCalc\Do RandomCalc" ParentType="Activity" Publish="True" VarValChanged="True" />
 <VariableRandomString DiffrentFromOrigin="True" Guid="112d1da8-5298-4cdf-af57-6d9342d395ea" MappedOutputType="None" Max="3" Min="1" Name="New Variable Random String" ParentGuid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentName="BI_Core4_R3_2_Copy\RandomCalc\Do RandomCalc" ParentType="Activity" Publish="True" VarValChanged="True" />
 <VariableSequence DiffrentFromOrigin="True" Guid="bb2d061a-1d78-452d-869b-1795a9fbe9e7" Interval="1" MappedOutputType="None" Max="10" Min="1" Name="New Variable Sequence" ParentGuid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentName="BI_Core4_R3_2_Copy\RandomCalc\Do RandomCalc" ParentType="Activity" Publish="True" VarValChanged="True" />
+</BusinessFlowCustomizedRunVariables>
+</BusinessFlowRun>
+</BusinessFlowsRunList>
+</GingerRunner>
+<GingerRunner Guid="a31d9a18-b61f-49d5-9065-30100c83a63f" Name="Runner 2" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall" SpecificEnvironmentName="VAPP_89" UseSpecificEnvironment="True">
+<ApplicationAgents>
+<ApplicationAgent AgentID="abc1306b-6cbc-497e-8255-92830a7b0e21" AgentName="Chrome" AppID="e13f2f07-e69d-4776-9a91-dcc2d67f6165" AppName="SOM" Guid="b69dd75f-c525-4354-b271-b808da30cab1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ApplicationAgent AgentID="ccb7c809-7662-46c6-bf94-d50a3905c2f4" AgentName="WebserviceAgent1" AppID="49e7d234-fb87-45ad-bb2e-359930ee1f41" AppName="CPQ" Guid="addc632e-5a92-46df-a461-b6b89a8e6d33" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ApplicationAgents>
+
+<BusinessFlowsRunList>
+<BusinessFlowRun BusinessFlowGuid="ce42c9f3-a7fd-42bd-a086-455f9dd8fbaa" BusinessFlowInstanceGuid="1825f0dc-7bbe-4772-9528-7d4b0d9c14ab" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2_Copy_Copy" Guid="0655761c-84fb-445f-a994-3dd2b00a8e07" ParentGuid="00000000-0000-0000-0000-000000000000">
+<BusinessFlowCustomizedRunVariables>
+<VariableString DiffrentFromOrigin="True" Guid="d4e2627d-0cc6-4796-8096-34ad74807046" InitialStringValue="xyz" MappedOutputType="None" Name="Activity Variable" ParentGuid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentName="BI_Core4_R3_2_Copy_Copy\RandomCalc\Do RandomCalc" ParentType="Activity" Publish="True" VarValChanged="True" />
+<VariableDynamic DiffrentFromOrigin="True" Guid="52ed627b-d53b-480b-b8f9-6b69e6e7dae7" MappedOutputType="None" Name="New Variable Dynamic" ParentGuid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentName="BI_Core4_R3_2_Copy_Copy\RandomCalc\Do RandomCalc" ParentType="Activity" Publish="True" ValueExpression="hgj" VarValChanged="True" />
 </BusinessFlowCustomizedRunVariables>
 </BusinessFlowRun>
 </BusinessFlowsRunList>
