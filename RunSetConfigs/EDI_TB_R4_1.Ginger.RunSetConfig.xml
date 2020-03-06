@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="d6e732df-d129-483a-bb00-4307b6111d15" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152117" GingerVersion="3.5.0.0" Version="49" LastUpdateBy="NATISHAK" LastUpdate="202003050644" />
+<GingerRepositoryItem><Header ItemGuid="d6e732df-d129-483a-bb00-4307b6111d15" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152117" GingerVersion="3.5.0.0" Version="50" LastUpdateBy="NATISHAK" LastUpdate="202003060725" />
 <RunSetConfig Guid="d6e732df-d129-483a-bb00-4307b6111d15" Name="BP_EDI_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" RunWithAnalyzer="False">
 <GingerRunners>
 <GingerRunner Guid="cb4d3d67-c2b9-4f71-930f-4eac07ecc603" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall" SpecificEnvironmentName="TTR_445" UseSpecificEnvironment="True">
@@ -9,8 +9,8 @@
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" BusinessFlowInstanceGuid="05dcc1e7-779a-4018-a4be-50073323574e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R4_1" Guid="2842aaab-c7c9-4988-95d6-6204f2ac5a9a" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<BusinessFlowRun BusinessFlowGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" BusinessFlowInstanceGuid="e092e436-8f3a-421a-8388-022206ed3b7d" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2_Copy" Guid="b2fda44e-389c-433e-9844-5bef45b26c13" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" BusinessFlowInstanceGuid="05dcc1e7-779a-4018-a4be-50073323574e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R4_1" Guid="84df26c8-6e7a-4389-b453-9eecd279bfd7" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" BusinessFlowInstanceGuid="e092e436-8f3a-421a-8388-022206ed3b7d" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2_Copy" Guid="82619692-e36a-4303-a787-ad471089176b" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>
