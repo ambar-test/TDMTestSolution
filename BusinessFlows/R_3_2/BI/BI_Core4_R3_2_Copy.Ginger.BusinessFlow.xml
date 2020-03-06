@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="46" LastUpdateBy="NATISHAK" LastUpdate="202003060725" />
+<GingerRepositoryItem><Header ItemGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="48" LastUpdateBy="NATISHAK" LastUpdate="202003060836" />
 <BusinessFlow Elapsed="6906" Guid="7723b725-0419-4ebd-acd9-54a45a0090b9" Name="BI_Core4_R3_2_Copy" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="RandomCalc" ActivityName="Do RandomCalc" AutomationStatus="Development" Description="cvbcb" ErrorHandlerMappingType="AllAvailableHandlers" Guid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
@@ -15,6 +15,10 @@
 </InputValues>
 </ActSetVariableValue>
 </Acts>
+
+<Variables>
+<VariableString Guid="d4e2627d-0cc6-4796-8096-34ad74807046" MappedOutputType="None" Name="Activity Variable" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+</Variables>
 </Activity>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Sum" ActivityName="Do Sum" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
 <Acts>
