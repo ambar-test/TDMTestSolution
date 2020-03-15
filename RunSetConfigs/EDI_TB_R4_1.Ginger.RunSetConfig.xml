@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="d6e732df-d129-483a-bb00-4307b6111d15" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152117" GingerVersion="3.5.0.0" Version="61" LastUpdateBy="MENIK" LastUpdate="202003152004" />
+<GingerRepositoryItem><Header ItemGuid="d6e732df-d129-483a-bb00-4307b6111d15" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152117" GingerVersion="3.5.0.0" Version="64" LastUpdateBy="MENIK" LastUpdate="202003152023" />
 <RunSetConfig Guid="d6e732df-d129-483a-bb00-4307b6111d15" Name="BP_EDI_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" RunWithAnalyzer="False">
 <GingerRunners>
 <GingerRunner Guid="cb4d3d67-c2b9-4f71-930f-4eac07ecc603" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall" SpecificEnvironmentName="TTR_445" UseSpecificEnvironment="True">
 <ApplicationAgents>
-<ApplicationAgent AgentID="4d30d140-a49e-4ed6-a63c-2d177768de92" AgentName="IE" AppID="e13f2f07-e69d-4776-9a91-dcc2d67f6165" AppName="SOM" Guid="e43b952b-4220-4cc6-96fd-8999335dd415" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ApplicationAgent AgentID="abc1306b-6cbc-497e-8255-92830a7b0e21" AgentName="Chrome" AppID="e13f2f07-e69d-4776-9a91-dcc2d67f6165" AppName="SOM" Guid="e43b952b-4220-4cc6-96fd-8999335dd415" ParentGuid="00000000-0000-0000-0000-000000000000" />
 <ApplicationAgent AgentID="ccb7c809-7662-46c6-bf94-d50a3905c2f4" AgentName="WebserviceAgent1" AppID="49e7d234-fb87-45ad-bb2e-359930ee1f41" AppName="CPQ" Guid="91780ea2-5f53-447f-84c6-1922d905f396" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" BusinessFlowInstanceGuid="05dcc1e7-779a-4018-a4be-50073323574e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R4_1" Guid="e22d3ea4-dda9-46e8-91f7-6467417cca6d" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" BusinessFlowInstanceGuid="05dcc1e7-779a-4018-a4be-50073323574e" BusinessFlowIsActive="True" BusinessFlowName="EDI_TB_R4_1" Guid="ffdeb992-f537-46b2-b55f-ba666771e836" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>
