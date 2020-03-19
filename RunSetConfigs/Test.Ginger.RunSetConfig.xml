@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="c643637c-51d0-4215-892f-91b801946315" ItemType="RunSetConfig" CreatedBy="NATISHAK" Created="202003111205" GingerVersion="3.5.0.0" Version="2" LastUpdateBy="NATISHAK" LastUpdate="202003111206" />
-<RunSetConfig Guid="c643637c-51d0-4215-892f-91b801946315" Name="Test" ParentGuid="00000000-0000-0000-0000-000000000000">
+<GingerRepositoryItem><Header ItemGuid="c643637c-51d0-4215-892f-91b801946315" ItemType="RunSetConfig" CreatedBy="NATISHAK" Created="202003111205" GingerVersion="3.5.0.0" Version="3" LastUpdateBy="natishak" LastUpdate="202003191151" />
+<RunSetConfig Guid="c643637c-51d0-4215-892f-91b801946315" Name="Test" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <GingerRunners>
 <GingerRunner Guid="c7f6f79d-9397-4079-9979-f6bd7866e2b4" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
 <ApplicationAgents>
@@ -9,7 +9,7 @@
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" BusinessFlowInstanceGuid="04dfd84f-6750-49f6-9d78-672507f96305" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2_Copy" Guid="1508c683-6976-4cc8-afd3-5537eae8bfc9" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" BusinessFlowInstanceGuid="04dfd84f-6750-49f6-9d78-672507f96305" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2_Copy" Guid="513fa3cd-65e2-403a-b96d-cb044d1c8492" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>
