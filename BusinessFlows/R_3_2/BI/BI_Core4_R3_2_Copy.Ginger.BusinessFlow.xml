@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="64" LastUpdateBy="natishak" LastUpdate="202003191217" />
+<GingerRepositoryItem><Header ItemGuid="7723b725-0419-4ebd-acd9-54a45a0090b9" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="66" LastUpdateBy="natishak" LastUpdate="202003191228" />
 <BusinessFlow Description="hg" Elapsed="6906" Guid="7723b725-0419-4ebd-acd9-54a45a0090b9" Name="BI_Core4_R3_2_Copy" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="RandomCalc" ActivityName="Do RandomCalc" AutomationStatus="Development" Description="cvbcb" ErrorHandlerMappingType="AllAvailableHandlers" Guid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
@@ -9,6 +9,7 @@
 <ActInputValue Guid="07104707-6453-454d-b2a9-590049ee8730" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </InputValues>
 </ActSetVariableValue>
+<ActExcel Active="True" Description="Excel Action" ExcelActionType="ReadData" Guid="de04840f-c2da-4e8f-8a7d-fe59318c1c9b" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow" />
 <ActFileOperations Active="True" Description="File Operations" FileOperationMode="CheckFileExists" Guid="eb7c1b27-df6d-4f6a-995b-23ed061bf09a" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow" />
 <ActSetVariableValue Active="True" Description="Set value to Random Calc" Guid="b5847e86-57cf-4026-a75b-8cc41c2537fb" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="RandomCalc" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
