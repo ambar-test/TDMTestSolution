@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="a8f76d9f-a47e-4db4-9f79-9e8d763bfc2c" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152114" GingerVersion="3.5.0.0" Version="382" LastUpdateBy="natishak" LastUpdate="202003231220" />
+<GingerRepositoryItem><Header ItemGuid="a8f76d9f-a47e-4db4-9f79-9e8d763bfc2c" ItemType="RunSetConfig" CreatedBy="MENIK" Created="202001152114" GingerVersion="3.5.0.0" Version="383" LastUpdateBy="natishak" LastUpdate="202003231223" />
 <RunSetConfig Guid="a8f76d9f-a47e-4db4-9f79-9e8d763bfc2c" Name="BP_BI_Core4_R3_2" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <GingerRunners>
-<GingerRunner Guid="c4fefc54-c8da-4edd-993a-e2f6ea84089e" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
+<GingerRunner Guid="c4fefc54-c8da-4edd-993a-e2f6ea84089e" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall" SpecificEnvironmentName="TTR_445" UseSpecificEnvironment="True">
 <ApplicationAgents>
 <ApplicationAgent AgentID="abc1306b-6cbc-497e-8255-92830a7b0e21" AgentName="Chrome" AppID="e13f2f07-e69d-4776-9a91-dcc2d67f6165" AppName="SOM" Guid="eae85729-fa36-43ac-b442-6ce30ebac736" ParentGuid="00000000-0000-0000-0000-000000000000" />
 <ApplicationAgent AgentID="ccb7c809-7662-46c6-bf94-d50a3905c2f4" AgentName="WebserviceAgent1" AppID="49e7d234-fb87-45ad-bb2e-359930ee1f41" AppName="CPQ" Guid="3938b500-812e-4070-9a69-e4b6a38ae349" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" BusinessFlowInstanceGuid="8b6c2ed4-0159-470e-bf7c-b0f2574e20f1" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2" Guid="57f4d014-0f0b-4a91-8a86-131667a8699c" ParentGuid="00000000-0000-0000-0000-000000000000">
+<BusinessFlowRun BusinessFlowGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" BusinessFlowInstanceGuid="8b6c2ed4-0159-470e-bf7c-b0f2574e20f1" BusinessFlowIsActive="True" BusinessFlowName="BI_Core4_R3_2" Guid="b2264e94-a1da-43f5-ae31-6dd9a090ca22" ParentGuid="00000000-0000-0000-0000-000000000000">
 <BusinessFlowCustomizedRunVariables>
 <VariableSelectionList Description="Set 'Yes' for performing Multiply calculation" DiffrentFromOrigin="True" Guid="ae0a73da-817b-435b-8f92-a960412e7ed1" MappedOutputType="None" Name="DoMultiply?" ParentGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" ParentName="BI_Core4_R3_2" ParentType="Business Flow" Publish="True" SetAsOutputValue="False" Value="No" VarValChanged="True">
 <OptionalValuesList>
