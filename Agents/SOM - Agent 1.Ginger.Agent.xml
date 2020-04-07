@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="ccb7c809-7662-46c6-bf94-d50a3905c2f4" ItemType="Agent" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="3" LastUpdateBy="MENIK" LastUpdate="202001152026" />
-<Agent AgentType="Driver" DriverType="WebServices" Guid="ccb7c809-7662-46c6-bf94-d50a3905c2f4" Name="WebserviceAgent1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices">
+<GingerRepositoryItem><Header ItemGuid="ccb7c809-7662-46c6-bf94-d50a3905c2f4" ItemType="Agent" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="4" LastUpdateBy="MENIK" LastUpdate="202004072035" />
+<Agent AgentType="Driver" DriverType="WebServices" Guid="ccb7c809-7662-46c6-bf94-d50a3905c2f4" Name="APIAgent1" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices">
 <DriverConfiguration>
 <DriverConfigParam Description="Show Driver Window On Launch" Guid="31f12f29-a57d-4446-9ba4-4bc943cb9943" Parameter="ShowDriverWindowOnLaunch" ParentGuid="00000000-0000-0000-0000-000000000000" Value="false" />
 <DriverConfigParam Description="Save Request XML" Guid="40075173-ccbf-4974-935f-6b7502eb5a99" Parameter="SaveRequestXML" ParentGuid="00000000-0000-0000-0000-000000000000" Value="true" />

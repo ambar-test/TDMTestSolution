@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="3d7f5675-ba0e-4cf5-b42c-35313c043da8" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="7" LastUpdateBy="MENIK" LastUpdate="202004072053" />
+<BusinessFlow Elapsed="4113" Guid="3d7f5675-ba0e-4cf5-b42c-35313c043da8" Name="ModifyPackage" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="ModifyPackage" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="CPQ">
+<Acts>
+<ActWebAPIModel Active="True" Description="Modify API- Step1" Guid="a7de77e9-773c-481f-add9-0dc58e4f0c32" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="3e41c0d8-e460-4475-8676-2832a82fad14" Param="{PHONENUMBER}" ParamGuid="f4e481b2-c6fb-43c5-a70d-62c80cf28b5b" ParentGuid="00000000-0000-0000-0000-000000000000" Value="7575449510" />
+<EnhancedActInputValue Guid="8c591048-9a93-4f87-9281-25a267b4492e" Param="{LICENSEKEY}" ParamGuid="f71722a1-2c85-429a-a4f9-02bcd34ded76" ParentGuid="00000000-0000-0000-0000-000000000000" Value="F01d89fd-5155-5455-5585- e84ab8de8591" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="9ea92d01-aaaf-40dd-ab67-c80c83b41e61" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="c2355fce-ac7b-4e06-9cf7-da9a870a97e0" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActWebAPIModel>
+<ActWebAPIModel Active="True" Description="Modify API- Step2" Guid="9f88d1cd-3fa1-43b9-8090-934daf5f14cc" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="610eb6f5-a231-426a-bdef-3890b2b334be" Param="{STRING}" ParamGuid="4171c321-df45-411b-ab8c-0e425a16ac69" ParentGuid="00000000-0000-0000-0000-000000000000" Value="aaa" />
+<EnhancedActInputValue Guid="24511bbc-1ac7-4c6c-b606-a5a70a330898" Param="{LICENSEKEY}" ParamGuid="09791cef-c927-40f2-bc41-ee72f8521bfe" ParentGuid="00000000-0000-0000-0000-000000000000" Value="F01d89fd-5155-5455-5585- e84ab8de8591" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="c6fee9eb-4774-4802-9eb8-a663f17db226" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="19265d1a-3175-4b6d-abd7-1146fcc3c915" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActWebAPIModel>
+<ActWebAPIModel Active="True" Description="Modify API- Step3" Guid="534097b7-5ec5-4bdf-864f-9d70fef04a0b" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="5fb253c8-5924-4e6b-ba96-82543e427e5a" Param="{PHONENUMBER}" ParamGuid="ff9c4a4e-5a0a-4556-bdc0-630a476a20f3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="7575449510" />
+<EnhancedActInputValue Guid="1b1e659a-8221-45d6-99d4-0e5edc99a66f" Param="{LICENSEKEY}" ParamGuid="dfc4d591-d7e9-4a79-9d29-849d37787ac8" ParentGuid="00000000-0000-0000-0000-000000000000" Value="F01d89fd-5155-5455-5585- e84ab8de8591" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="99a81152-6407-4b7c-9d93-df4343f4ef14" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="86023097-484d-4381-93fb-f502b5dd3a5d" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActWebAPIModel>
+<ActWebAPIModel Active="True" Description="Modify API- Step4" Guid="cef3e9f2-4007-42f2-9156-b5284ff19efb" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<APIModelParamsValue>
+<EnhancedActInputValue Guid="5d0c6885-bc01-42e4-911d-20ba07aeb774" Param="{STRING}" ParamGuid="ce389f89-2c84-49bf-9966-7f67878a76cf" ParentGuid="00000000-0000-0000-0000-000000000000" Value="aaa" />
+<EnhancedActInputValue Guid="78ac1b54-923b-457d-8479-e60fd54a9559" Param="{LICENSEKEY}" ParamGuid="aebe3606-40e4-4608-86f3-858a0448b32a" ParentGuid="00000000-0000-0000-0000-000000000000" Value="F01d89fd-5155-5455-5585- e84ab8de8591" />
+</APIModelParamsValue>
+
+<InputValues>
+<ActInputValue Guid="cd8c97e7-0be6-46a3-b122-fa81c402acdd" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="3eb73c9b-1087-43ca-9895-b908b5d8d93c" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+</ActWebAPIModel>
+</Acts>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="ModifyPackage" Guid="579b22c3-5a54-4960-9e86-b0f05b880ed8" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="CPQ" Guid="438ea78e-5e60-4105-86bf-d51c14db05d6" LastExecutingAgentName="APIAgent1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+
+<Variables>
+<VariableString Guid="43769aaa-7977-47aa-96de-dedbd98459fc" MappedOutputType="None" Name="CustomerIDToModify" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+<VariableSelectionList Guid="db9dcffe-c4f9-4c69-b823-66b91d58d3c8" MappedOutputType="None" Name="PackageToSet" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AAA">
+<OptionalValuesList>
+<OptionalValue Guid="e3ef35e5-965c-4998-84d8-cad8a8baf535" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AAA" />
+<OptionalValue Guid="40aabac1-336a-4ca4-aedd-af336c4cecf3" ParentGuid="00000000-0000-0000-0000-000000000000" Value="BBB" />
+<OptionalValue Guid="54105f94-078f-4686-b4b2-b897a70861e7" ParentGuid="00000000-0000-0000-0000-000000000000" Value="CCC" />
+</OptionalValuesList>
+</VariableSelectionList>
+</Variables>
+</BusinessFlow></GingerRepositoryItem>

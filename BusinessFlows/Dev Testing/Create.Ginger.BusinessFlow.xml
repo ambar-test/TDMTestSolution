@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="75" LastUpdateBy="MENIK" LastUpdate="202004062042" />
-<BusinessFlow Elapsed="58443" Guid="32fc9234-9d10-45cd-a42d-80efaaf268b2" Name="EDI_TB_R4_1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
+<GingerRepositoryItem><Header ItemGuid="7174b436-6224-4668-a5bb-fb7097e56ec5" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="79" LastUpdateBy="MENIK" LastUpdate="202004062052" />
+<BusinessFlow Elapsed="12362" Guid="7174b436-6224-4668-a5bb-fb7097e56ec5" Name="Create" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Create Lead" ActivityName="TDM Data Setup" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
 <Acts>
@@ -14,6 +14,11 @@
 <ActInputValue Guid="ecbf7f20-7d83-4d4b-8590-f464dfa815fa" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </InputValues>
 </ActDummy>
+<ActSetVariableValue Active="True" Description="Set Name Output" Guid="03e754a8-ca36-4c9f-a507-ff7a8df7b5ec" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="BP_CustomerName" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="273911a4-d840-40c8-868d-88d136dffd5c" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="JHON {Var Name=Site City}" />
+</InputValues>
+</ActSetVariableValue>
 </Acts>
 
 <Variables>
@@ -366,9 +371,9 @@
 </ActWebAPIModel>
 </Acts>
 </Activity>
-<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Create Customer &amp; Proposal" ActivityName="Create Customer &amp; Proposal" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="11d15a8e-c160-4e96-9657-89b773c38b64" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="43%" Publish="True" TargetApplication="SOM">
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Create Customer &amp; Proposal" ActivityName="Create Customer &amp; Proposal" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="11d15a8e-c160-4e96-9657-89b773c38b64" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
 <Acts>
-<ActBrowserElement Description="Browser Action" Guid="1d2d6e4d-6e2a-4bf4-b830-c879d2eec1f1" ImplicitWait="60" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<ActBrowserElement Active="True" Description="Browser Action" Guid="1d2d6e4d-6e2a-4bf4-b830-c879d2eec1f1" ImplicitWait="60" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
 <ActInputValue Guid="2ebd0ccd-1760-49f9-a71f-3ba7ba48e8ff" Param="ControlAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="GotoURL" />
 <ActInputValue Guid="4a707e63-2872-4387-8183-7a84bc480ac9" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
@@ -379,20 +384,7 @@
 <ActInputValue Guid="7bb8762a-b4f4-47a5-afad-63a5adb178ea" Param="PomGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0a371b66-df00-4c01-a2da-aefc1934e8c1" />
 </InputValues>
 </ActBrowserElement>
-<ActUIElement Description="SetText - Password" Guid="f05aa891-0530-4814-9ee7-51cd916b8c87" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
-<InputValues>
-<ActInputValue Guid="d1a92267-9977-4463-a308-48028392dc4c" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
-<ActInputValue Guid="dd6c6e24-059d-447e-a200-19b438fa8753" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0a371b66-df00-4c01-a2da-aefc1934e8c1_1a2e6805-403c-4669-8232-7f5fb1b6e7a7" />
-<ActInputValue Guid="f370af16-cf0c-45db-89bb-9b5c1365fc0b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=userPass}" />
-<ActInputValue Guid="f678006b-8c4b-45af-a3d9-566822635a27" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
-<ActInputValue Guid="c74f9e4d-7066-4102-af18-e9b0caf48069" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
-<ActInputValue Guid="f6ce6236-09a4-4d57-b2d2-ed90c462a4e1" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActInputValue Guid="98765d56-7888-481b-97a7-1829e8275529" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActInputValue Guid="93724cf9-0167-4791-9b50-a709a0a59cbe" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActInputValue Guid="858b955c-b1e9-4b9a-833f-b1131a0ea3b1" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" />
-</InputValues>
-</ActUIElement>
-<ActUIElement Description="SetText - Email" Guid="ef17b53c-9069-4b58-b18b-553c55b353d1" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<ActUIElement Active="True" Description="SetText - Email" Guid="ef17b53c-9069-4b58-b18b-553c55b353d1" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
 <ActInputValue Guid="43812cf1-2127-4b15-9bb1-e16bebca9113" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
 <ActInputValue Guid="53ed4b24-ded5-4258-a1c6-1d3954ef24d5" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0a371b66-df00-4c01-a2da-aefc1934e8c1_fdc1d401-1c4e-4cb0-9e06-9ea8c8dc190c" />
@@ -405,7 +397,20 @@
 <ActInputValue Guid="cebe3fb9-1234-45ee-9d4c-80bf3dc121d0" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </InputValues>
 </ActUIElement>
-<ActUIElement Description="Click - Sign Up" Guid="d49d95a3-a367-4b15-bec9-af44549475ee" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<ActUIElement Active="True" Description="SetText - Password" Guid="f05aa891-0530-4814-9ee7-51cd916b8c87" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d1a92267-9977-4463-a308-48028392dc4c" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="SetText" />
+<ActInputValue Guid="dd6c6e24-059d-447e-a200-19b438fa8753" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0a371b66-df00-4c01-a2da-aefc1934e8c1_1a2e6805-403c-4669-8232-7f5fb1b6e7a7" />
+<ActInputValue Guid="f370af16-cf0c-45db-89bb-9b5c1365fc0b" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=userPass}" />
+<ActInputValue Guid="f678006b-8c4b-45af-a3d9-566822635a27" Param="ElementLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" Value="POMElement" />
+<ActInputValue Guid="c74f9e4d-7066-4102-af18-e9b0caf48069" Param="ElementType" ParentGuid="00000000-0000-0000-0000-000000000000" Value="TextBox" />
+<ActInputValue Guid="f6ce6236-09a4-4d57-b2d2-ed90c462a4e1" Param="TargetLocateBy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="98765d56-7888-481b-97a7-1829e8275529" Param="TargetElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="93724cf9-0167-4791-9b50-a709a0a59cbe" Param="HandleElementType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActInputValue Guid="858b955c-b1e9-4b9a-833f-b1131a0ea3b1" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActUIElement>
+<ActUIElement Active="True" Description="Click - Sign Up" Guid="d49d95a3-a367-4b15-bec9-af44549475ee" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
 <ActInputValue Guid="db560764-f206-452a-b386-bbc9f41613ab" Param="ElementAction" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Click" />
 <ActInputValue Guid="776cac11-a0ee-4d54-96f4-3ebe2cf9a37b" Param="ElementLocateValue" ParentGuid="00000000-0000-0000-0000-000000000000" Value="0a371b66-df00-4c01-a2da-aefc1934e8c1_e9697052-a1d8-47f8-ab3f-03d883370416" />
@@ -418,19 +423,14 @@
 <ActInputValue Guid="24367b4e-5df2-4f97-ac5c-5916b6666950" Param="HandleActionType" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </InputValues>
 </ActUIElement>
-<ActSetVariableValue Active="True" Description="Set Customer Output" Guid="8121a67e-86b1-4412-a793-4d798d15e448" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="BP_CustomerID" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<ActSetVariableValue Active="True" Description="Set Customer Output" Guid="8121a67e-86b1-4412-a793-4d798d15e448" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="AutoGenerateValue" StatusConverter="None" VariableName="BP_CustomerID" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
-<ActInputValue Guid="0c2edcf4-f50f-4bc4-879e-62e7c71c0d57" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Function Fun=GetUnixTimeStamp()}" />
-</InputValues>
-</ActSetVariableValue>
-<ActSetVariableValue Active="True" Description="Set Name Output" Guid="03e754a8-ca36-4c9f-a507-ff7a8df7b5ec" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="BP_CustomerName" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
-<InputValues>
-<ActInputValue Guid="273911a4-d840-40c8-868d-88d136dffd5c" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Jhon Smith" />
+<ActInputValue Guid="0c2edcf4-f50f-4bc4-879e-62e7c71c0d57" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </InputValues>
 </ActSetVariableValue>
 <ActSetVariableValue Active="True" Description="Set Framework Output" Guid="a24d353b-2094-4012-bd92-501161822d29" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="BP_FrameworkAgreementID" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
-<ActInputValue Guid="e0e712c8-c6fd-480a-93b4-d8757bd377ff" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IFrameworkAgreement_14233736" />
+<ActInputValue Guid="e0e712c8-c6fd-480a-93b4-d8757bd377ff" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="IFrameworkAgreement_{Function Fun=GetUnixTimeStamp()}" />
 </InputValues>
 </ActSetVariableValue>
 </Acts>
@@ -477,120 +477,120 @@
 <ActivitiesGroups>
 <ActivitiesGroup Guid="0b117905-cf83-42dd-b65a-6b804bb53ad0" Name="Create Lead" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ActivityName="TDM Data Setup" Guid="dabf6b5b-9c73-4530-a317-5561785af8a9" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ActivityName="Create Lead" Guid="59991b98-9729-4116-8039-ffe72f4adb08" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ActivityName="TDM Data Setup" Guid="4864709b-ecce-4bf0-bc0b-3a7f1b2acd6c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ActivityName="Create Lead" Guid="d7a5fcda-a313-4af0-8404-d92e320578f9" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="ed709c17-e025-4219-b136-524a07fd09ab" Name="Create Customer &amp; Proposal" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="11d15a8e-c160-4e96-9657-89b773c38b64" ActivityName="Create Customer &amp; Proposal" Guid="631e869a-85c6-401e-aafa-6c45e057a39d" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="11d15a8e-c160-4e96-9657-89b773c38b64" ActivityName="Create Customer &amp; Proposal" Guid="d484880b-98b7-4959-bb2b-790fa3234f78" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="6c370c4e-318d-4f89-bb7d-78786b87c8ca" Name="Create Site_Access &amp; Assign" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="85873023-d7bb-485b-bada-3ebcaa6db7fb" ActivityName="Create Site_Access &amp; Assign" Guid="f5583965-44ff-41e8-b9c8-16557494a34d" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="85873023-d7bb-485b-bada-3ebcaa6db7fb" ActivityName="Create Site_Access &amp; Assign" Guid="37e28515-a310-4a4b-bd63-2f85b1ead1f8" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="373a0f08-0550-49e0-b61a-ec1bb6ea30e0" Name="ODO-Availability Check" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="97ec9319-9b26-44ad-8ffc-675089b914b4" ActivityName="ODO-Availability Check" Guid="8d5fcf5f-e3fe-4c2f-a7b9-239582eec0ec" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="97ec9319-9b26-44ad-8ffc-675089b914b4" ActivityName="ODO-Availability Check" Guid="f6539b78-5627-4ab7-9229-e4cad1735e72" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="edd041af-e62b-4d9c-ad0d-2a7c034a3180" Name="Check Vendor" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="cd7a0e0c-f204-4174-8503-585f776a2b5f" ActivityName="Check Vendor" Guid="92cd5c0a-1f79-4b14-87d2-0bd9d5a5b27c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="cd7a0e0c-f204-4174-8503-585f776a2b5f" ActivityName="Check Vendor" Guid="c1e23a6f-0d45-48ba-b3a4-c23346756274" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="411a7d9e-08c0-4b81-b64a-cb99a41115bd" Name="Site Servey" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ActivityName="Site Servey" Guid="abf7a66e-e2c3-4493-be63-2deba9e84ada" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="5f2da6d5-1373-4ee2-b8b8-0a111b69c81b" ActivityName="Site Servey" Guid="9a893df0-021c-4ea2-b3f3-ef1530169bf7" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="8d447fff-f920-4fab-b55d-08dcdfb19444" Name="NPC Configuration" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="b97fc973-5a8f-43e0-a3fa-addc4a3c8933" ActivityName="NPC Configuration" Guid="d5fe7012-2711-4410-91cd-0fff662ee22c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="b97fc973-5a8f-43e0-a3fa-addc4a3c8933" ActivityName="NPC Configuration" Guid="0e6e9fc3-ba6b-4e9a-bf12-8b3711f8daae" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="f9e77139-11de-46b7-a764-f9013de7edd2" Name="Proposal Validation &amp; IRR Calculation" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="5305877b-9c91-45f9-b1ab-fa8d12c16ac4" ActivityName="Proposal Validation &amp; IRR Calculation" Guid="b2f11f84-20d3-4b97-8ca8-2cf7ae3db20b" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="5305877b-9c91-45f9-b1ab-fa8d12c16ac4" ActivityName="Proposal Validation &amp; IRR Calculation" Guid="b47dd23c-d857-4cdf-aa57-ad84ab768e9a" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="06205f78-4fcd-4f89-90e5-1479cef5bed6" Name="ODO Approval" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="031b83f3-1a96-477b-872e-3a568f1902af" ActivityName="ODO Approval" Guid="67f62413-1fef-41c7-a051-b1232d0b27aa" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="031b83f3-1a96-477b-872e-3a568f1902af" ActivityName="ODO Approval" Guid="f2e5074c-475f-44aa-b358-0662ac2beaa8" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="37f8a6ef-4aad-4400-bc9a-b9738486a933" Name="Contract Generation" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d7e6a08a-f1cd-4789-958d-3ec5be48e114" ActivityName="Contract Generation" Guid="74738f14-07bb-498b-a7ee-57d38f50f447" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d7e6a08a-f1cd-4789-958d-3ec5be48e114" ActivityName="Contract Generation" Guid="334ad7f7-31f9-41fd-8078-f80add791f32" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="b47dd275-df03-496b-ba3e-c5436bedb72a" Name="Create &amp; Assign BA" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d728b152-7fdc-4ebf-a2d2-9dd8d66fe429" ActivityName="Create &amp; Assign BA" Guid="a281e1de-38df-45fd-890c-6f1f79e20ae9" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="d728b152-7fdc-4ebf-a2d2-9dd8d66fe429" ActivityName="Create &amp; Assign BA" Guid="dc721f18-b381-4a46-87a5-d79601ecc028" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="ccb0828d-e880-4231-a191-ef2c323d3e4e" Name="ODO Validation" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="233f05af-d503-417c-8ec6-bbe9dd016728" ActivityName="ODO Validation" Guid="45d5aa43-17f0-4d01-9a79-50942901bea0" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="233f05af-d503-417c-8ec6-bbe9dd016728" ActivityName="ODO Validation" Guid="d63212fe-4109-471c-b3f8-e0d7e758f05c" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="ecaf4561-01dc-4703-93b4-9fb302694efb" Name="ODO-Agreement" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="c7f404b9-3ba5-463b-aeb7-9b554bbcaab4" ActivityName="ODO-Agreement" Guid="7a701eb1-13a6-4ecd-9521-f0202b06bb66" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="c7f404b9-3ba5-463b-aeb7-9b554bbcaab4" ActivityName="ODO-Agreement" Guid="24519f2d-460a-4ddf-a739-767d3e363e64" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="4f2c140c-9f0c-4335-ba3b-871c9b16c47e" Name="ODO-ROE" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="a8d5721c-ff58-4487-91ca-cc16be53944d" ActivityName="ODO-ROE" Guid="490de5e9-2fd3-4520-a757-ac0eaf666e72" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="a8d5721c-ff58-4487-91ca-cc16be53944d" ActivityName="ODO-ROE" Guid="cd2b73b4-4339-44bf-a795-8bae353e6122" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="c73775fc-50f3-4b57-b040-666e748ff549" Name="ODO-Site Access" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="cb2b6174-f2ac-4ef2-8ad0-3b69132bde7c" ActivityName="ODO-Site Access" Guid="b190b920-5e5b-44a0-b40a-7e088dbff724" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="cb2b6174-f2ac-4ef2-8ad0-3b69132bde7c" ActivityName="ODO-Site Access" Guid="7c4bb41f-e1e5-4264-b7d8-4d2aaa10686b" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="7ad7e88e-0d43-469e-9efb-0de35e04efac" Name="ODO-Initial/Update Design" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="529b30ba-78b2-4b3d-af4e-2cf548b98b59" ActivityName="ODO-Initial/Update Design" Guid="1cfb26e2-ff2c-4662-bee5-c2137f942132" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="529b30ba-78b2-4b3d-af4e-2cf548b98b59" ActivityName="ODO-Initial/Update Design" Guid="847846e8-718b-44e2-bfa9-6eb27cf161c7" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="41a84bca-83d3-4ab9-9b61-fd2ec47022b6" Name="ODO-Asset Management" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="7b675e15-7ce8-4066-9f41-725904580f72" ActivityName="ODO-Asset Management" Guid="69703c16-869e-4319-9d04-d91f409e53c4" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="7b675e15-7ce8-4066-9f41-725904580f72" ActivityName="ODO-Asset Management" Guid="85a60f6e-7969-4aaf-bb0e-a0a4f633b3ea" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="7c2354db-f3f4-4e1f-bd7f-8fffe7c934d1" Name="ODO-Provisioning" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="a766070a-0b3b-4645-a883-15014991c38f" ActivityName="ODO-Provisioning" Guid="a2bfcb5f-69c0-481d-8ef4-90e248935feb" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="a766070a-0b3b-4645-a883-15014991c38f" ActivityName="ODO-Provisioning" Guid="11a8eaaa-5a56-4eec-b8d7-91fb8cc9a6a0" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="538c78a2-ed6d-4a2b-b3f0-948ddb7ebfa1" Name="ODO-Solution Within Site Part1" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="c2110638-6b21-4ad1-8d6d-c07c8c5009d8" ActivityName="ODO-Solution Within Site Part1" Guid="74bb59a0-2c42-485f-a7b2-ab8a6d3e69b5" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="c2110638-6b21-4ad1-8d6d-c07c8c5009d8" ActivityName="ODO-Solution Within Site Part1" Guid="1e963833-25d0-4b2f-889f-2b972826d72c" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="b97aaa45-2223-496c-8a4e-5e70cada3b60" Name="ODO-Schedule Technician" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="0a0ce674-5834-44f5-a9c8-57689d82baae" ActivityName="ODO-Schedule Technician" Guid="24a787c1-0f55-4fdf-8a88-23a2f1dfab5d" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="0a0ce674-5834-44f5-a9c8-57689d82baae" ActivityName="ODO-Schedule Technician" Guid="3d0820d7-3bed-4f5a-9917-98ef640ba4e2" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="a172ae4d-75a4-4062-a33c-8313a13a3eba" Name="ODO-Solution Within Site Part2" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="31f895aa-611a-4a89-8a2e-3a2d365ada10" ActivityName="ODO-Solution Within Site Part2" Guid="b04a85da-5c74-4f3a-a34f-b4d1ee079c14" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="31f895aa-611a-4a89-8a2e-3a2d365ada10" ActivityName="ODO-Solution Within Site Part2" Guid="4b38999c-48f4-4068-8a57-a9ab28b2dcbe" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 <ActivitiesGroup Guid="0b3639bd-6bd5-404d-a6a0-da16a978707c" Name="ODO-Solution" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesGroups>
 
 <TargetApplications>
-<TargetApplication AppName="SOM" Guid="20862ef2-fb43-4c31-9ad4-85c9f613f013" LastExecutingAgentName="IE" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<TargetApplication AppName="CPQ" Guid="961ffb9e-1a6a-4540-8464-5df45fc4dd0b" LastExecutingAgentName="WebserviceAgent1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="SOM" Guid="f96f39c8-ed51-4337-81f2-d3e7e2e42fbb" LastExecutingAgentName="Chrome" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="CPQ" Guid="9cd80171-c22e-4694-8217-e5dc5b33716b" LastExecutingAgentName="WebserviceAgent1" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </TargetApplications>
 
 <Variables>
-<VariableString Guid="56aa48f2-8d32-46a1-80d0-25d170e72fe6" InitialStringValue="700957104" MappedOutputType="None" Name="BP_CustomerID" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Sub Business Process" Publish="True" SetAsInputValue="False" />
+<VariableRandomNumber Guid="5c257962-2c7e-4556-b5c4-601ac56d33f0" Interval="59952254" IsInteger="True" MappedOutputType="None" Max="9000000000" Min="7000000000" Name="BP_CustomerID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
 <VariableString Guid="1213969e-8f86-4a05-9c4f-7b5a9473cc71" InitialStringValue="IFrameworkAgreement_14233736" MappedOutputType="None" Name="BP_FrameworkAgreementID" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Sub Business Process" Publish="True" SetAsInputValue="False" />
 <VariableString Guid="815a2efd-45cb-436d-a045-170935c02ab6" InitialStringValue="Jhon Smith" MappedOutputType="None" Name="BP_CustomerName" ParentGuid="32fc9234-9d10-45cd-a42d-80efaaf268b2" ParentName="EDI_TB_R4_1" ParentType="Sub Business Process" Publish="True" SetAsInputValue="False" />
 </Variables>
