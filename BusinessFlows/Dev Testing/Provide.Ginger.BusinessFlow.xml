@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="b75cdce4-c237-4a65-93a5-afb4a917c46f" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072100" GingerVersion="3.5.0.0" Version="7" LastUpdateBy="MENIK" LastUpdate="202004072116" />
+<GingerRepositoryItem><Header ItemGuid="b75cdce4-c237-4a65-93a5-afb4a917c46f" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072100" GingerVersion="3.5.0.0" Version="8" LastUpdateBy="MENIK" LastUpdate="202004120901" />
 <BusinessFlow Elapsed="56439" Guid="b75cdce4-c237-4a65-93a5-afb4a917c46f" Name="Provide" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
-<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="CPQ_Provide" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="30853dc4-0fce-4654-9ea4-6a20306f0a14" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="CPQ">
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="CPQ" ActivityName="CPQ_Provide" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="30853dc4-0fce-4654-9ea4-6a20306f0a14" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="CPQ">
 <Acts>
 <ActWebAPIModel Active="True" Description="Provide API- Step1" Guid="023fb4e8-6680-44ed-8637-4c6de8545e99" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <APIModelParamsValue>
@@ -22,9 +22,6 @@
 <ActInputValue Guid="327cc238-09cd-4e3e-a660-76260864349e" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="86023097-484d-4381-93fb-f502b5dd3a5d" />
 <ActInputValue Guid="002184bd-4daa-4b03-b14e-b2162b9f5a5d" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="86023097-484d-4381-93fb-f502b5dd3a5d" />
 </InputValues>
-
-<ReturnValues>
-</ReturnValues>
 </ActWebAPIModel>
 <ActWebAPIModel Active="True" Description="Provide API- Step2" Guid="8075156a-4fc3-42c1-b796-ca51c3503bba" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <APIModelParamsValue>
@@ -44,9 +41,6 @@
 <ActInputValue Guid="918187d8-f95b-4d96-8e5b-22aadffb56d9" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="3eb73c9b-1087-43ca-9895-b908b5d8d93c" />
 <ActInputValue Guid="8a7b1638-2352-4907-b46f-09dc01b1f146" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="3eb73c9b-1087-43ca-9895-b908b5d8d93c" />
 </InputValues>
-
-<ReturnValues>
-</ReturnValues>
 </ActWebAPIModel>
 <ActWebAPIModel Active="True" Description="Provide API- Step3" Guid="908a92f7-5daa-46f8-9c9d-cc23d7ca1abb" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <APIModelParamsValue>
@@ -66,9 +60,6 @@
 <ActInputValue Guid="fe727653-ce9c-40eb-9bc1-b305404997c1" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="c2355fce-ac7b-4e06-9cf7-da9a870a97e0" />
 <ActInputValue Guid="c4cb7c85-69d6-4c12-b14f-c60aa4b675fd" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="c2355fce-ac7b-4e06-9cf7-da9a870a97e0" />
 </InputValues>
-
-<ReturnValues>
-</ReturnValues>
 </ActWebAPIModel>
 <ActWebAPIModel Active="True" Description="Provide API- Step4" Guid="a692a4a2-56c4-423a-bbd8-328c07afe5fe" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <APIModelParamsValue>
@@ -88,13 +79,10 @@
 <ActInputValue Guid="ccefcbc4-540a-47ee-a3fb-a63e41a31fbc" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="19265d1a-3175-4b6d-abd7-1146fcc3c915" />
 <ActInputValue Guid="6782a557-8722-437b-9bdc-b5b8f162a161" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="19265d1a-3175-4b6d-abd7-1146fcc3c915" />
 </InputValues>
-
-<ReturnValues>
-</ReturnValues>
 </ActWebAPIModel>
 </Acts>
 </Activity>
-<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Som_Provide" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="13b3175a-8e93-4788-a8cf-734bfc40a82a" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="SOM" ActivityName="SOM_Provide" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="13b3175a-8e93-4788-a8cf-734bfc40a82a" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
 <Acts>
 <ActBrowserElement Active="True" Description="Browser Action" Guid="1d2d6e4d-6e2a-4bf4-b830-c879d2eec1f1" ImplicitWait="60" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="Web" RetryMechanismInterval="5" StatusConverter="None" TakeScreenShot="True" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
@@ -151,6 +139,11 @@
 <ActInputValue Guid="0c2edcf4-f50f-4bc4-879e-62e7c71c0d57" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Function Fun=GetUnixTimeStamp()}" />
 </InputValues>
 </ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Set Provide Time" Guid="222da0d8-9bfe-4094-a101-2c8465b2b359" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="ProvideTime" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="04727b0a-193b-4faa-9648-17d7d8b52e57" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp=DateTime.Now}" />
+</InputValues>
+</ActSetVariableValue>
 </Acts>
 
 <Variables>
@@ -160,10 +153,14 @@
 </Activities>
 
 <ActivitiesGroups>
-<ActivitiesGroup Guid="40efa2c3-b4d3-4ca7-91d8-980d872d0050" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesGroup Guid="40efa2c3-b4d3-4ca7-91d8-980d872d0050" Name="CPQ" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="30853dc4-0fce-4654-9ea4-6a20306f0a14" ActivityName="CPQ_Provide" Guid="d3bff41e-137b-4729-9d12-df960e85068c" ParentGuid="00000000-0000-0000-0000-000000000000" />
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="13b3175a-8e93-4788-a8cf-734bfc40a82a" ActivityName="Som_Provide" Guid="0b1f386e-b97b-42d2-bdea-1284e5115bf0" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="30853dc4-0fce-4654-9ea4-6a20306f0a14" ActivityName="CPQ_Provide" Guid="90e75ebc-fae3-4875-bf36-242858f8dc1a" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="c9a1f673-52c3-4313-a05d-02daebe4051e" Name="SOM" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="13b3175a-8e93-4788-a8cf-734bfc40a82a" ActivityName="SOM_Provide" Guid="1fc2c7fd-dae0-4021-a050-cf39961536f9" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
@@ -183,6 +180,7 @@
 </OptionalValuesList>
 </VariableSelectionList>
 <VariableString Guid="00727de4-bde0-4761-85a8-681e8a86c282" MappedOutputType="None" Name="CategoryNum" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="4c536ec6-cb23-4e94-88d2-56efa352a129" MappedOutputType="None" Name="ProvideTime" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
 <VariableString Guid="c8abfa68-9475-4812-a0e8-251a0f2bb080" MappedOutputType="None" Name="ProvideTrackingID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
 </Variables>
 </BusinessFlow></GingerRepositoryItem>

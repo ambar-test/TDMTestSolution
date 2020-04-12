@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="11" LastUpdateBy="MENIK" LastUpdate="202004072055" />
+<GingerRepositoryItem><Header ItemGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="13" LastUpdateBy="MENIK" LastUpdate="202004120858" />
 <BusinessFlow Elapsed="4113" Guid="80e3a8df-6af6-4026-b15e-fe033c54699b" Name="ModifyName" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
-<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="ModifyName" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="CPQ">
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Modify" ActivityName="ModifyName" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="CPQ">
 <Acts>
 <ActWebAPIModel Active="True" Description="Modify API- Step1" Guid="a7de77e9-773c-481f-add9-0dc58e4f0c32" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <APIModelParamsValue>
@@ -44,14 +44,19 @@
 <ActInputValue Guid="cd8c97e7-0be6-46a3-b122-fa81c402acdd" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="3eb73c9b-1087-43ca-9895-b908b5d8d93c" />
 </InputValues>
 </ActWebAPIModel>
+<ActSetVariableValue Active="True" Description="Set Modify Time" Guid="c986637a-52e6-4f70-89bd-b905e0f25a10" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="NameModifyTime" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="04727b0a-193b-4faa-9648-17d7d8b52e57" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp=DateTime.Now}" />
+</InputValues>
+</ActSetVariableValue>
 </Acts>
 </Activity>
 </Activities>
 
 <ActivitiesGroups>
-<ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Modify" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="ModifyName" Guid="7b2ec05e-7ddb-4ee3-b961-680b70b038a7" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="ModifyName" Guid="0c0d0d52-cb94-4686-bd26-7d1e71de145c" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
@@ -62,6 +67,7 @@
 
 <Variables>
 <VariableString Guid="43769aaa-7977-47aa-96de-dedbd98459fc" MappedOutputType="None" Name="CustomerIDToModify" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
-<VariableString Guid="826290d1-c04d-41b4-bcd1-6089e6007098" MappedOutputType="None" Name="NewName" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+<VariableString Guid="0dc21ab4-5412-4aa5-94fc-52313ba6dab4" MappedOutputType="None" Name="NameModifyTime" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="826290d1-c04d-41b4-bcd1-6089e6007098" MappedOutputType="None" Name="CustomerName" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
 </Variables>
 </BusinessFlow></GingerRepositoryItem>
