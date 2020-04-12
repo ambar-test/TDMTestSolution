@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="b75cdce4-c237-4a65-93a5-afb4a917c46f" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072100" GingerVersion="3.5.0.0" Version="8" LastUpdateBy="MENIK" LastUpdate="202004120901" />
+<GingerRepositoryItem><Header ItemGuid="b75cdce4-c237-4a65-93a5-afb4a917c46f" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072100" GingerVersion="3.5.0.0" Version="12" LastUpdateBy="MENIK" LastUpdate="202004120953" />
 <BusinessFlow Elapsed="56439" Guid="b75cdce4-c237-4a65-93a5-afb4a917c46f" Name="Provide" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="CPQ" ActivityName="CPQ_Provide" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="30853dc4-0fce-4654-9ea4-6a20306f0a14" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="CPQ">
@@ -80,6 +80,11 @@
 <ActInputValue Guid="6782a557-8722-437b-9bdc-b5b8f162a161" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="19265d1a-3175-4b6d-abd7-1146fcc3c915" />
 </InputValues>
 </ActWebAPIModel>
+<ActSetVariableValue Active="True" Description="Set Tracking ID" Guid="6f075f3c-65fb-4457-beb5-277e205a4691" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="ProvideTrackingID" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d26eca42-52d7-4787-8bf2-d009ccb407a1" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Function Fun=GetUnixTimeStamp()}" />
+</InputValues>
+</ActSetVariableValue>
 </Acts>
 </Activity>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="SOM" ActivityName="SOM_Provide" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="13b3175a-8e93-4788-a8cf-734bfc40a82a" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
@@ -147,7 +152,7 @@
 </Acts>
 
 <Variables>
-<VariablePasswordString Guid="3186e327-c8ad-40d4-a6bf-95d094d78767" MappedOutputType="None" Name="userPass" ParentGuid="11d15a8e-c160-4e96-9657-89b773c38b64" ParentName="Create Customer &amp; Proposal" ParentType="Step" Password="hzu1L5arUGcfzvkKH4fOjw==" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariablePasswordString Guid="3186e327-c8ad-40d4-a6bf-95d094d78767" MappedOutputType="None" Name="userPass" ParentGuid="13b3175a-8e93-4788-a8cf-734bfc40a82a" ParentName="Provide\SOM\SOM_Provide" ParentType="Activity" Password="hzu1L5arUGcfzvkKH4fOjw==" SetAsInputValue="False" SetAsOutputValue="False" />
 </Variables>
 </Activity>
 </Activities>
@@ -171,16 +176,16 @@
 </TargetApplications>
 
 <Variables>
-<VariableString Guid="c65d596b-3d81-44b7-a6c2-38dbf5566c4d" MappedOutputType="None" Name="ProvideCustomerID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
-<VariableSelectionList Guid="4716907d-3294-4c71-b7a8-9f95f6cd2fc8" MappedOutputType="None" Name="PackageType" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Value="AAA">
+<VariableString Guid="c65d596b-3d81-44b7-a6c2-38dbf5566c4d" MappedOutputType="None" Name="ProvideCustomerID" ParentGuid="b75cdce4-c237-4a65-93a5-afb4a917c46f" ParentName="Provide" ParentType="Business Flow" Publish="True" />
+<VariableSelectionList Guid="4716907d-3294-4c71-b7a8-9f95f6cd2fc8" MappedOutputType="None" Name="PackageType" ParentGuid="b75cdce4-c237-4a65-93a5-afb4a917c46f" ParentName="Provide" ParentType="Business Flow" Publish="True" Value="AAA">
 <OptionalValuesList>
 <OptionalValue Guid="dcb01ee6-1bb6-4a2c-9f13-228ecb2e614c" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AAA" />
 <OptionalValue Guid="26d80632-1571-4944-9e01-afc143dca634" ParentGuid="00000000-0000-0000-0000-000000000000" Value="BBB" />
 <OptionalValue Guid="a0c13011-a829-4829-b215-7b67921cd290" ParentGuid="00000000-0000-0000-0000-000000000000" Value="CCC" />
 </OptionalValuesList>
 </VariableSelectionList>
-<VariableString Guid="00727de4-bde0-4761-85a8-681e8a86c282" MappedOutputType="None" Name="CategoryNum" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" />
-<VariableString Guid="4c536ec6-cb23-4e94-88d2-56efa352a129" MappedOutputType="None" Name="ProvideTime" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
-<VariableString Guid="c8abfa68-9475-4812-a0e8-251a0f2bb080" MappedOutputType="None" Name="ProvideTrackingID" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="00727de4-bde0-4761-85a8-681e8a86c282" MappedOutputType="None" Name="CategoryNum" ParentGuid="b75cdce4-c237-4a65-93a5-afb4a917c46f" ParentName="Provide" ParentType="Business Flow" Publish="True" SetAsOutputValue="False" />
+<VariableString Guid="4c536ec6-cb23-4e94-88d2-56efa352a129" MappedOutputType="None" Name="ProvideTime" ParentGuid="b75cdce4-c237-4a65-93a5-afb4a917c46f" ParentName="Provide" ParentType="Business Flow" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="c8abfa68-9475-4812-a0e8-251a0f2bb080" MappedOutputType="None" Name="ProvideTrackingID" ParentGuid="b75cdce4-c237-4a65-93a5-afb4a917c46f" ParentName="Provide" ParentType="Business Flow" Publish="True" SetAsInputValue="False" />
 </Variables>
 </BusinessFlow></GingerRepositoryItem>

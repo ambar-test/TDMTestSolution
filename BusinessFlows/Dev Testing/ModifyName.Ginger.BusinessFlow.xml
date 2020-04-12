@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="13" LastUpdateBy="MENIK" LastUpdate="202004120858" />
+<GingerRepositoryItem><Header ItemGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="18" LastUpdateBy="MENIK" LastUpdate="202004120952" />
 <BusinessFlow Elapsed="4113" Guid="80e3a8df-6af6-4026-b15e-fe033c54699b" Name="ModifyName" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Modify" ActivityName="ModifyName" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="CPQ">
@@ -66,8 +66,8 @@
 </TargetApplications>
 
 <Variables>
-<VariableString Guid="43769aaa-7977-47aa-96de-dedbd98459fc" MappedOutputType="None" Name="CustomerIDToModify" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
-<VariableString Guid="0dc21ab4-5412-4aa5-94fc-52313ba6dab4" MappedOutputType="None" Name="NameModifyTime" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
-<VariableString Guid="826290d1-c04d-41b4-bcd1-6089e6007098" MappedOutputType="None" Name="CustomerName" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+<VariableString Guid="43769aaa-7977-47aa-96de-dedbd98459fc" MappedOutputType="None" Name="CustomerIDToModify" ParentGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" ParentName="ModifyName" ParentType="Business Flow" Publish="True" />
+<VariableString Guid="0dc21ab4-5412-4aa5-94fc-52313ba6dab4" MappedOutputType="None" Name="NameModifyTime" ParentGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" ParentName="ModifyName" ParentType="Business Flow" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="826290d1-c04d-41b4-bcd1-6089e6007098" MappedOutputType="None" Name="CustomerNameToSet" ParentGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" ParentName="ModifyName" ParentType="Business Flow" Publish="True" />
 </Variables>
 </BusinessFlow></GingerRepositoryItem>
