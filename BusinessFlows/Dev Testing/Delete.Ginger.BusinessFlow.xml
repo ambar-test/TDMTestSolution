@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="10" LastUpdateBy="MENIK" LastUpdate="202004072057" />
+<GingerRepositoryItem><Header ItemGuid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="12" LastUpdateBy="MENIK" LastUpdate="202004120846" />
 <BusinessFlow Elapsed="4113" Guid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" Name="Delete" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
 <Activities>
-<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="ModifyPackage" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="CPQ">
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Delete Customer" ActivityName="DeleteCustomer" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="CPQ">
 <Acts>
 <ActWebAPIModel Active="True" Description="Delet API- Step1" Guid="a7de77e9-773c-481f-add9-0dc58e4f0c32" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <APIModelParamsValue>
@@ -14,7 +14,7 @@
 <ActInputValue Guid="9ea92d01-aaaf-40dd-ab67-c80c83b41e61" Param="APImodelGUID" ParentGuid="00000000-0000-0000-0000-000000000000" Value="c2355fce-ac7b-4e06-9cf7-da9a870a97e0" />
 </InputValues>
 </ActWebAPIModel>
-<ActSetVariableValue Active="True" Description="Set Deletion Time" Guid="0dff67ee-ab29-4f2a-a2db-ac165daccd59" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="CustomerIDToDelete" WindowsToCapture="OnlyActiveWindow">
+<ActSetVariableValue Active="True" Description="Set Deletion Time" Guid="0dff67ee-ab29-4f2a-a2db-ac165daccd59" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="DeletionTime" WindowsToCapture="OnlyActiveWindow">
 <InputValues>
 <ActInputValue Guid="04727b0a-193b-4faa-9648-17d7d8b52e57" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp=DateTime.Now}" />
 </InputValues>
@@ -28,9 +28,9 @@
 </Activities>
 
 <ActivitiesGroups>
-<ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Delete Customer" ParentGuid="00000000-0000-0000-0000-000000000000">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="ModifyPackage" Guid="6aeb66a3-e358-4beb-a43b-0d6e678208b6" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="DeleteCustomer" Guid="fa240dfa-71a6-4a85-a9c3-2100885c2f36" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
