@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="14" LastUpdateBy="MENIK" LastUpdate="202004190834" />
+<GingerRepositoryItem><Header ItemGuid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="15" LastUpdateBy="MENIK" LastUpdate="202004190930" />
 <BusinessFlow Elapsed="4113" Guid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" Name="Delete" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Delete Customer" ActivityName="DeleteCustomer" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="CPQ">
@@ -23,6 +23,13 @@
 
 <Variables>
 <VariableString Guid="599bc2f0-76d0-47dc-b19f-7470f2e43179" MappedOutputType="None" Name="DeletionTime" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsInputValue="False" />
+<VariableSelectionList Guid="0e226592-cc76-42db-b613-45f4aba55c71" MappedOutputType="None" Name="DeletionReason" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" SetAsOutputValue="False" Value="Missing payment">
+<OptionalValuesList>
+<OptionalValue Guid="1d456bd2-f1d1-4671-8631-730a34be85fc" ParentGuid="00000000-0000-0000-0000-000000000000" Value="User asked" />
+<OptionalValue Guid="a309d5e9-b5d5-4943-b780-5c039a4f4470" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Missing payment" />
+<OptionalValue Guid="690469e4-918e-4b37-8c82-8c18143650df" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Wrong details" />
+</OptionalValuesList>
+</VariableSelectionList>
 </Variables>
 </Activity>
 </Activities>
@@ -30,7 +37,7 @@
 <ActivitiesGroups>
 <ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Delete Customer" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="DeleteCustomer" Guid="cd6f0b11-9c85-40ff-9082-903fccfe67bb" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="DeleteCustomer" Guid="10adb776-aaf9-406a-bd4a-2f3b3951ea8a" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
