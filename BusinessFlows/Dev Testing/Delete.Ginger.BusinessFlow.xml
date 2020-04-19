@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="13" LastUpdateBy="MENIK" LastUpdate="202004190830" />
+<GingerRepositoryItem><Header ItemGuid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="14" LastUpdateBy="MENIK" LastUpdate="202004190834" />
 <BusinessFlow Elapsed="4113" Guid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" Name="Delete" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
-<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Delete Customer" ActivityName="DeleteCustomer" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="CPQ">
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Delete Customer" ActivityName="DeleteCustomer" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="CPQ">
 <Acts>
 <ActWebAPIModel Active="True" Description="Delet API- Step1" Guid="a7de77e9-773c-481f-add9-0dc58e4f0c32" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
 <APIModelParamsValue>
@@ -28,7 +28,7 @@
 </Activities>
 
 <ActivitiesGroups>
-<ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Delete Customer" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Delete Customer" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
 <ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="DeleteCustomer" Guid="cd6f0b11-9c85-40ff-9082-903fccfe67bb" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
