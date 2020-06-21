@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="15" LastUpdateBy="MENIK" LastUpdate="202004190930" />
+<GingerRepositoryItem><Header ItemGuid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.6.0.0" Version="16" LastUpdateBy="MENIK" LastUpdate="202006211419" />
 <BusinessFlow Elapsed="4113" Guid="6297cd8c-5d65-4c7e-b0ca-6de3201abb65" Name="Delete" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Delete Customer" ActivityName="DeleteCustomer" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="CPQ">
@@ -37,7 +37,7 @@
 <ActivitiesGroups>
 <ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Delete Customer" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="DeleteCustomer" Guid="10adb776-aaf9-406a-bd4a-2f3b3951ea8a" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="DeleteCustomer" Guid="4d00c209-c7d1-47c3-9415-e005d71fcf55" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
@@ -47,6 +47,6 @@
 </TargetApplications>
 
 <Variables>
-<VariableString Guid="43769aaa-7977-47aa-96de-dedbd98459fc" MappedOutputType="None" Name="CustomerIDToDelete" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+<VariableString Guid="c9b501de-023a-47a9-8ef2-97762652d0c2" MappedOutputType="None" Name="CustomerIDToDelete" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
 </Variables>
 </BusinessFlow></GingerRepositoryItem>
