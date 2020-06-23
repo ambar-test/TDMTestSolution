@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="3d7f5675-ba0e-4cf5-b42c-35313c043da8" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.5.0.0" Version="10" LastUpdateBy="MENIK" LastUpdate="202004190959" />
+<GingerRepositoryItem><Header ItemGuid="3d7f5675-ba0e-4cf5-b42c-35313c043da8" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202004072047" GingerVersion="3.6.0.0" Version="12" LastUpdateBy="MENIK" LastUpdate="202006211343" />
 <BusinessFlow Elapsed="4113" Guid="3d7f5675-ba0e-4cf5-b42c-35313c043da8" Name="ModifyPackage" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
 <Activities>
 <Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Modify" ActivityName="ModifyPackage" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="CPQ">
@@ -56,7 +56,7 @@
 <ActivitiesGroups>
 <ActivitiesGroup Guid="c9a4bbd7-f211-45a1-b339-8c8966b1ef69" Name="Modify" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <ActivitiesIdentifiers>
-<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="ModifyPackage" Guid="29e3ac1c-523e-4fbe-b3a2-4b1fcabcd157" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="8c2c06f2-27d0-4c55-9e36-0f063f62f815" ActivityName="ModifyPackage" Guid="68842a27-f208-49ac-9657-b3b8ca443bdb" ParentGuid="00000000-0000-0000-0000-000000000000" />
 </ActivitiesIdentifiers>
 </ActivitiesGroup>
 </ActivitiesGroups>
@@ -66,7 +66,7 @@
 </TargetApplications>
 
 <Variables>
-<VariableString Guid="43769aaa-7977-47aa-96de-dedbd98459fc" MappedOutputType="None" Name="CustomerIDToModify" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
+<VariableString Guid="94b50452-f59c-422c-a5c1-3a8ddef89a46" MappedOutputType="None" Name="CustomerIDToModifyPackage" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" />
 <VariableSelectionList Guid="db9dcffe-c4f9-4c69-b823-66b91d58d3c8" MappedOutputType="None" Name="CustomerPackage" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Value="AAA">
 <OptionalValuesList>
 <OptionalValue Guid="e3ef35e5-965c-4998-84d8-cad8a8baf535" ParentGuid="00000000-0000-0000-0000-000000000000" Value="AAA" />
