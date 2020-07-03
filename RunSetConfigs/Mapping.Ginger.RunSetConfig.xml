@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="34d4094b-ebf6-42ca-a418-74a25fe036a2" ItemType="RunSetConfig" CreatedBy="mahessha" Created="202007030807" GingerVersion="3.6.0.0" Version="14" LastUpdateBy="mahessha" LastUpdate="202007031009" />
+<GingerRepositoryItem><Header ItemGuid="34d4094b-ebf6-42ca-a418-74a25fe036a2" ItemType="RunSetConfig" CreatedBy="mahessha" Created="202007030807" GingerVersion="3.6.0.0" Version="18" LastUpdateBy="mahessha" LastUpdate="202007031110" />
 <RunSetConfig Guid="34d4094b-ebf6-42ca-a418-74a25fe036a2" Name="Mapping" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
 <GingerRunners>
 <GingerRunner Guid="b09ed1ac-ba64-4a7e-aba8-875ef1eaad40" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
@@ -9,23 +9,19 @@
 </ApplicationAgents>
 
 <BusinessFlowsRunList>
-<BusinessFlowRun BusinessFlowGuid="7174b436-6224-4668-a5bb-fb7097e56ec5" BusinessFlowInstanceGuid="1b0d1353-6d76-453e-bcfe-7501240f10f4" BusinessFlowIsActive="True" BusinessFlowName="Create" Guid="92fb9a4e-6ac1-43dd-bc8e-72b9a5bc15e3" ParentGuid="00000000-0000-0000-0000-000000000000">
-<BusinessFlowCustomizedRunVariables>
-<VariableSelectionList DiffrentFromOrigin="True" Guid="04a72470-a53a-4bfb-b55c-5514b9c1d220" MappedOutputType="None" Name="Static IP Version Type1" ParentGuid="1d95147b-360c-42a2-8b2e-e4b5320a32a0" ParentName="Create\Create Lead\TDM Data Setup" ParentType="Activity" Publish="True" SetAsOutputValue="False" Value="NA" VarValChanged="True">
-<OptionalValuesList>
-<OptionalValue Guid="d3a7afa1-b064-42cd-bc05-1a9120d71256" ParentGuid="00000000-0000-0000-0000-000000000000" Value="NA" />
-<OptionalValue Guid="91668101-61aa-4738-9207-5be50526826a" ParentGuid="00000000-0000-0000-0000-000000000000" Value="P2P" />
-<OptionalValue Guid="819e6c32-bdb2-4199-b20d-923e59294eaf" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Customer_IP_Block" />
-</OptionalValuesList>
-</VariableSelectionList>
-</BusinessFlowCustomizedRunVariables>
+<BusinessFlowRun BusinessFlowGuid="7174b436-6224-4668-a5bb-fb7097e56ec5" BusinessFlowInstanceGuid="1b0d1353-6d76-453e-bcfe-7501240f10f4" BusinessFlowIsActive="True" BusinessFlowName="Create" Guid="e5d11470-329e-4a27-a6d0-192e519de204" ParentGuid="00000000-0000-0000-0000-000000000000">
 </BusinessFlowRun>
-<BusinessFlowRun BusinessFlowGuid="3d7f5675-ba0e-4cf5-b42c-35313c043da8" BusinessFlowInstanceGuid="eb37f76f-0ad7-432c-9497-0d44ae25c734" BusinessFlowIsActive="True" BusinessFlowName="ModifyPackage" Guid="54934ae4-c239-4e4b-8a9b-5cfa0528c6bf" ParentGuid="00000000-0000-0000-0000-000000000000">
+<BusinessFlowRun BusinessFlowGuid="3d7f5675-ba0e-4cf5-b42c-35313c043da8" BusinessFlowInstanceGuid="eb37f76f-0ad7-432c-9497-0d44ae25c734" BusinessFlowIsActive="True" BusinessFlowName="ModifyPackage" Guid="5e670cfa-c0ce-43fc-aadc-2d4bbd390e55" ParentGuid="00000000-0000-0000-0000-000000000000">
 <BusinessFlowCustomizedRunVariables>
 <VariableString DiffrentFromOrigin="True" Guid="94b50452-f59c-422c-a5c1-3a8ddef89a46" MappedOutputType="Variable" MappedOutputValue="BP_CustomerID" Name="CustomerIDToModifyPackage" ParentGuid="3d7f5675-ba0e-4cf5-b42c-35313c043da8" ParentName="ModifyPackage" ParentType="Business Flow" Publish="True" />
 </BusinessFlowCustomizedRunVariables>
 </BusinessFlowRun>
-<BusinessFlowRun BusinessFlowGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" BusinessFlowInstanceGuid="c66a3c06-b2bc-486e-a7d6-7bdb4409cd2a" BusinessFlowIsActive="True" BusinessFlowName="ModifyName" Guid="d797ef2c-a582-44a0-8bec-01a4ed591fac" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<BusinessFlowRun BusinessFlowGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" BusinessFlowInstanceGuid="c66a3c06-b2bc-486e-a7d6-7bdb4409cd2a" BusinessFlowIsActive="True" BusinessFlowName="ModifyName" Guid="2f56c0ea-3ca0-4d66-b44e-cd7c3d1e878e" ParentGuid="00000000-0000-0000-0000-000000000000">
+<BusinessFlowCustomizedRunVariables>
+<VariableString DiffrentFromOrigin="True" Guid="43769aaa-7977-47aa-96de-dedbd98459fc" MappedOutputType="Variable" MappedOutputValue="BP_CustomerID" Name="CustomerIDToModify" ParentGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" ParentName="ModifyName" ParentType="Business Flow" Publish="True" />
+<VariableString DiffrentFromOrigin="True" Guid="826290d1-c04d-41b4-bcd1-6089e6007098" MappedOutputType="Variable" MappedOutputValue="BP_CustomerName" Name="CustomerNameToSet" ParentGuid="80e3a8df-6af6-4026-b15e-fe033c54699b" ParentName="ModifyName" ParentType="Business Flow" Publish="True" />
+</BusinessFlowCustomizedRunVariables>
+</BusinessFlowRun>
 </BusinessFlowsRunList>
 </GingerRunner>
 </GingerRunners>
