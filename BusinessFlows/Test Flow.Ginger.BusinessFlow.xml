@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="2735400b-10aa-4140-99b8-766c418f4066" ItemType="BusinessFlow" CreatedBy="natishak" Created="202007091002" GingerVersion="3.6.0.0" Version="6" LastUpdateBy="natishak" LastUpdate="202007091011" />
+<BusinessFlow Guid="2735400b-10aa-4140-99b8-766c418f4066" Name="Test Flow" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Group" ActivityName="Activity 1" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="25d6d01c-2c1f-4282-8aa3-85ffeb1c589a" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="SOM">
+<Acts>
+<ActSetVariableValue Active="True" Description="Set Variable Action" Guid="1aaca1f4-c34f-4e3d-9216-5a0ff62ab7ef" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="Activity Variable String" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="e392aa50-9ab2-413c-9647-6e044c43ba03" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{Var Name=Business Variable}" />
+</InputValues>
+</ActSetVariableValue>
+</Acts>
+
+<Variables>
+<VariableString Guid="48c361e5-052f-4410-8367-206760617134" MappedOutputType="None" Name="Activity Variable String" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</Variables>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="e4e86494-b3dc-4994-a121-8235fc129e2b" Name="Group" ParentGuid="00000000-0000-0000-0000-000000000000">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="25d6d01c-2c1f-4282-8aa3-85ffeb1c589a" ActivityName="Activity 1" Guid="9a424d56-4028-409b-84c6-b14660b94581" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="SOM" Guid="6206c4e4-0a81-4248-bec9-903f55af7ae3" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+
+<Variables>
+<VariableString Guid="4363728f-6203-4355-b54d-cc62f2e4f4e8" MappedOutputType="None" Name="Business Variable" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</Variables>
+</BusinessFlow></GingerRepositoryItem>
