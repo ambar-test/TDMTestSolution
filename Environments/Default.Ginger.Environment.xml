@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<GingerRepositoryItem><Header ItemGuid="ee123103-b2cf-4de9-93a2-143f5cf9b767" ItemType="ProjEnvironment" CreatedBy="MENIK" Created="202001152024" GingerVersion="3.5.0.0" Version="2" LastUpdateBy="MENIK" LastUpdate="202001261706" />
-<ProjEnvironment Guid="ee123103-b2cf-4de9-93a2-143f5cf9b767" Name="VAPP_89" ParentGuid="00000000-0000-0000-0000-000000000000">
-<Applications>
-<EnvApplication Active="True" Guid="b20b6bc7-ec87-4452-be60-5a838567b1d3" Name="SOM" ParentGuid="00000000-0000-0000-0000-000000000000" />
-</Applications>
-</ProjEnvironment></GingerRepositoryItem>
