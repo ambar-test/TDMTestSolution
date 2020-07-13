@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" ItemType="BusinessFlow" CreatedBy="MENIK" Created="202001152030" GingerVersion="3.5.0.0" Version="40" LastUpdateBy="NATISHAK" LastUpdate="202003110852" />
+<BusinessFlow Elapsed="6906" Guid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" Name="BI_Core4_R3_2" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True" Source="Ginger" Status="Unknown">
+<Activities>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="RandomCalc" ActivityName="Do RandomCalc" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
+<Acts>
+<ActSetVariableValue Active="True" Description="Gen Random number to be used" Guid="21c0d4df-e932-4457-b13a-55d10f655997" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="AutoGenerateValue" StatusConverter="None" VariableName="RandomNum" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="07104707-6453-454d-b2a9-590049ee8730" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActSetVariableValue>
+<ActSetVariableValue Active="True" Description="Set value to Random Calc" Guid="b5847e86-57cf-4026-a75b-8cc41c2537fb" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="RandomCalc" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="52890060-f5d9-4069-9155-30f83e764980" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp={Var Name=MainNum}+{Var Name=RandomNum}}" />
+</InputValues>
+</ActSetVariableValue>
+</Acts>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Sum" ActivityName="Do Sum" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
+<Acts>
+<ActDummy Active="True" Description="Decide if to Run Sum" Guid="74d24f98-6665-4e83-8900-c84b2e400d2a" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" Condition="&quot;{Var Name=DoSum?}&quot; = &quot;No&quot;" FlowControlAction="GoToNextActivity" Guid="35def723-569e-4299-bb63-da5b825415de" Operator="Legacy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="41122c02-ed72-4db0-b476-d0fd764b8485" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Calculate Sum" Guid="da3bf834-da60-46c6-9e89-0184810f353a" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="SumResult" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="6f947abf-80c0-4f4e-9fbe-e90f776b0350" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp={Var Name=MainNum}+{Var Name=SecondNum_ForSum}}" />
+</InputValues>
+</ActSetVariableValue>
+<ActExcel Active="True" Description="Write Res to Excel" ExcelActionType="WriteData" Guid="61f0e21a-4679-4898-ae03-dd2a159f2625" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3ffaa6ac-d042-4e25-a837-938329ae9d39" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Result]={Var Name=SumResult}" />
+<ActInputValue Guid="a8035c8e-7d22-41fc-833e-c2d6a9a00bc9" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\DOCUMENTS\EXCELS\DATA.XLSX" />
+<ActInputValue Guid="60c747eb-e230-4e3f-a882-54bbf3213ab7" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+<ActInputValue Guid="de37d21b-e5f1-4551-b653-b6fa6fbd41a5" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Calc Type]='Sum'" />
+<ActInputValue Guid="6e71d8f9-df4c-41d4-a1d8-fc2b742dfe2e" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="c6debeb8-4438-491a-8fe0-4ee535a81d0e" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Result]={Var Name=SumResult}" />
+<ActInputValue Guid="1eb99bfc-f282-47c2-8b10-3821f9b5a6d2" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\DOCUMENTS\EXCELS\DATA.XLSX" />
+<ActInputValue Guid="c7de8fba-a730-4067-9d2a-3d2994babc74" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+<ActInputValue Guid="a3bcac09-9af6-46fe-ad85-028c8956f4ee" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Calc Type]='Sum'" />
+<ActInputValue Guid="9695bbb2-6ed0-42a7-bb40-ea221f3a5050" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="aadee81f-9774-400a-a16a-fee36dff87af" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\DOCUMENTS\EXCELS\DATA.XLSX" />
+<ActInputValue Guid="374a1681-f8ea-4e19-830c-7fd87c2338ab" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+<ActInputValue Guid="a394f30e-5743-438b-84e0-ed13afa450fc" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Calc Type]='Sum'" />
+<ActInputValue Guid="b43e5f5d-1236-443d-bfe5-8aa7fd313ea3" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="bc899a8f-5a63-4098-ac30-c39151705a25" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Result]={Var Name=SumResult}" />
+<ActInputValue Guid="40d32a84-b7a6-4af3-bfd3-ff95b4ffe691" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\DOCUMENTS\EXCELS\DATA.XLSX" />
+<ActInputValue Guid="d822aa50-3642-425e-8a08-5c470181364c" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="3110b4e7-8e73-4c56-a164-8c6857f9c1ca" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+<ActInputValue Guid="1dfc3514-cd64-49af-b2a9-0696f9132cd3" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Calc Type]='Sum'" />
+</InputValues>
+</ActExcel>
+</Acts>
+
+<Variables>
+<VariableString Description="Number to use for Sum with MainNum" Guid="4de03f61-031e-41dc-91f0-e689a001bd5a" InitialStringValue="5" MappedOutputType="None" Name="SecondNum_ForSum" ParentGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentName="BI_Core4_R3_2\Sum\Do Sum" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+<VariableString Description="Result of the Sum of MainNum and SecondNum " Guid="acaf386c-3300-452b-bc6f-b64d0dc4cc52" InitialStringValue="None" MappedOutputType="None" Name="SumResult" ParentGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentName="BI_Core4_R3_2\Sum\Do Sum" ParentType="Activity" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="411e9c36-cd92-4ccf-bad8-62cefd0b0614" MappedOutputType="None" Name="DO NOT SHOW ME 1!!" ParentGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentName="BI_Core4_R3_2\Sum\Do Sum" ParentType="Activity" SetAsInputValue="False" SetAsOutputValue="False" />
+<VariableString Guid="e7d0c738-19a7-4cb3-9c49-f63650918bff" MappedOutputType="None" Name="DO NOT SHOW ME 2!!" ParentGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentName="BI_Core4_R3_2\Sum\Do Sum" ParentType="Activity" SetAsOutputValue="False" />
+<VariableString Guid="d99e64c6-f570-4833-a6d4-7068a613b033" MappedOutputType="None" Name="DO NOT SHOW ME 3!!" ParentGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentName="BI_Core4_R3_2\Sum\Do Sum" ParentType="Activity" SetAsInputValue="False" />
+<VariableString Guid="6ac6f07b-77b5-4753-8842-c240c8c44532" MappedOutputType="None" Name="DO NOT SHOW ME 4!!" ParentGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ParentName="BI_Core4_R3_2\Sum\Do Sum" ParentType="Activity" Publish="True" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Multiply" ActivityName="Do Multiply" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="cb800179-fa3c-46fa-9c38-4c9c605ab149" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
+<Acts>
+<ActDummy Active="True" Description="Decide if to Run Multiply" Guid="206edc95-07a8-4ac2-bc61-8245e51cf13e" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" Condition="&quot;{Var Name=DoMultiply?}&quot; = &quot;No&quot;" FlowControlAction="GoToNextActivity" Guid="35def723-569e-4299-bb63-da5b825415de" Operator="Legacy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="41122c02-ed72-4db0-b476-d0fd764b8485" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Calculate Multiply" Guid="5e342123-1b70-42e7-bbab-be4539972d37" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="MultiplyResult" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="6f947abf-80c0-4f4e-9fbe-e90f776b0350" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp={Var Name=MainNum}*{Var Name=SecondNum_ForMultiply}}" />
+</InputValues>
+</ActSetVariableValue>
+<ActExcel Active="True" Description="Write Res to Excel" ExcelActionType="WriteData" Guid="d4045db7-574c-4ac0-ae47-e870a328e975" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="d5579bd6-5e65-4037-af50-c4e01035eacc" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Result]={Var Name=MultiplyResult}" />
+<ActInputValue Guid="ec0b8c1f-6d8f-4692-a45a-740f4f32d197" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\DOCUMENTS\EXCELS\DATA.XLSX" />
+<ActInputValue Guid="e3675978-83b2-4504-ad91-a43d1cb80a2b" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+<ActInputValue Guid="61797c44-be18-4cbb-b7f8-fba70f1b320d" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Calc Type]='Multiply'" />
+<ActInputValue Guid="0bd25eca-8583-422e-8a53-c9c9e699c37f" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="49434b03-8ec2-40f6-b155-da3261ca523d" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Result]={Var Name=MultiplyResult}" />
+<ActInputValue Guid="75682973-2cca-4d39-ad3f-c82fbb060e22" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\DOCUMENTS\EXCELS\DATA.XLSX" />
+<ActInputValue Guid="907cf896-50ad-4dc8-8b5d-e88cfe4dec7f" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="f3021e2d-48a2-444a-8d67-98996136efc7" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Calc Type]='Multiply'" />
+<ActInputValue Guid="a06fa16e-8a89-4880-9bab-595b91df86f2" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+</InputValues>
+</ActExcel>
+</Acts>
+
+<Variables>
+<VariableString Description="Result of the Multiply of MainNum and SecondNum " Guid="dd8077d1-1479-472b-8ada-33c88bfcb91d" InitialStringValue="None" MappedOutputType="None" Name="MultiplyResult" ParentGuid="cb800179-fa3c-46fa-9c38-4c9c605ab149" ParentName="BI_Core4_R3_2\Multiply\Do Multiply" ParentType="Activity" Publish="True" SetAsInputValue="False" />
+<VariableString Description="Number to use for Nultiply with MainNum" Guid="5b9df897-4201-4895-9d47-d1fe81c4a0a0" InitialStringValue="3" MappedOutputType="None" Name="SecondNum_ForMultiply" ParentGuid="cb800179-fa3c-46fa-9c38-4c9c605ab149" ParentName="BI_Core4_R3_2\Multiply\Do Multiply" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+<Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivitiesGroupID="Divide" ActivityName="Do Divide" AutomationStatus="Development" ErrorHandlerMappingType="AllAvailableHandlers" Guid="4d6949ee-bd24-4b97-be01-f6fc686eeba9" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" Publish="True" TargetApplication="SOM">
+<Acts>
+<ActDummy Active="True" Description="Decide if to Run Divide" Guid="9bf93cf7-8948-4d63-8d8c-56ea5c5e6141" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<FlowControls>
+<FlowControl Active="True" BusinessFlowControlAction="GoToBusinessFlow" Condition="&quot;{Var Name=DoDivide?}&quot; = &quot;No&quot;" FlowControlAction="StopRun" Guid="35def723-569e-4299-bb63-da5b825415de" Operator="Legacy" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</FlowControls>
+
+<InputValues>
+<ActInputValue Guid="41122c02-ed72-4db0-b476-d0fd764b8485" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</InputValues>
+</ActDummy>
+<ActSetVariableValue Active="True" Description="Calculate Divide" Guid="864e4814-cddb-4e45-8125-168e1beb714e" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="SetValue" StatusConverter="None" VariableName="DivideResult" WaitVE="0" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="6f947abf-80c0-4f4e-9fbe-e90f776b0350" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" Value="{CS Exp={Var Name=MainNum}/{Var Name=SecondNum_ForDivide}}" />
+</InputValues>
+</ActSetVariableValue>
+<ActExcel Active="True" Description="Write Res to Excel" ExcelActionType="WriteData" Guid="4be68e93-fa63-4ba7-8933-f82ab675ee80" MaxNumberOfRetries="2" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" WindowsToCapture="OnlyActiveWindow">
+<InputValues>
+<ActInputValue Guid="3808bda7-805d-4330-9b7d-20d83ab5fdf9" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Result]={Var Name=DivideResult}" />
+<ActInputValue Guid="f1ba1b0a-af45-4460-8c57-fb13d33b604c" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\DOCUMENTS\EXCELS\DATA.XLSX" />
+<ActInputValue Guid="a371acef-8b42-4e7d-bf29-fd520926fceb" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+<ActInputValue Guid="3f994bc8-0c30-4f62-bc28-afee307a9628" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Calc Type]='Divid'" />
+<ActInputValue Guid="d0180916-5e14-4569-866f-88df28da139c" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="51b90137-ed30-4dfb-aa98-72e480f528b5" Param="ColMappingRules" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Result]={Var Name=DivideResult}" />
+<ActInputValue Guid="5c646ac5-0503-4d81-a14c-173d083cf2e3" Param="ExcelFileName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="~\\DOCUMENTS\EXCELS\DATA.XLSX" />
+<ActInputValue Guid="47d58b14-3a5b-46f3-94b0-aa42646690c4" Param="SheetName" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Sheet1" />
+<ActInputValue Guid="46d82be0-bb0b-4c2c-9a60-ba118ef322e0" Param="SelectRowsWhere" ParentGuid="00000000-0000-0000-0000-000000000000" Value="[Calc Type]='Divid'" />
+<ActInputValue Guid="242c4e1c-4dec-44ad-ac43-127eaafa6740" Param="PrimaryKeyColumn" ParentGuid="00000000-0000-0000-0000-000000000000" Value="ID" />
+</InputValues>
+</ActExcel>
+</Acts>
+
+<Variables>
+<VariableString Guid="3ba88ef6-1b42-4c25-a4a1-9097ae2e2f55" InitialStringValue="None" MappedOutputType="None" Name="DivideResult" ParentGuid="4d6949ee-bd24-4b97-be01-f6fc686eeba9" ParentName="BI_Core4_R3_2\Divide\Do Divide" ParentType="Activity" Publish="True" SetAsInputValue="False" />
+<VariableString Guid="c2563db3-2073-4cb4-8147-6db5af758b00" InitialStringValue="2" MappedOutputType="None" Name="SecondNum_ForDivide" ParentGuid="4d6949ee-bd24-4b97-be01-f6fc686eeba9" ParentName="BI_Core4_R3_2\Divide\Do Divide" ParentType="Activity" Publish="True" SetAsOutputValue="False" />
+</Variables>
+</Activity>
+</Activities>
+
+<ActivitiesGroups>
+<ActivitiesGroup Guid="8568128d-f945-43c0-8292-b8943282a7f6" Name="RandomCalc" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="91ba3dd6-8688-43aa-b2d9-a2da7f9c4ea1" ActivityName="Do RandomCalc" Guid="95514338-4969-48ae-9f0d-53282a4f09a1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="0b117905-cf83-42dd-b65a-6b804bb53ad0" Name="Sum" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="9bff4443-2186-46d4-824e-68d068e3e4cc" ActivityName="Do Sum" Guid="510c9232-4f02-4df8-8573-8df13f23b8c3" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="43608559-06e2-4c4d-a258-80ba55dc4992" Name="Multiply" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="cb800179-fa3c-46fa-9c38-4c9c605ab149" ActivityName="Do Multiply" Guid="55f9ae14-8589-46c6-aabf-f3ea078755fd" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+<ActivitiesGroup Guid="17afb069-a131-4732-b813-d7498ba0b0fe" Name="Divide" ParentGuid="00000000-0000-0000-0000-000000000000" Publish="True">
+<ActivitiesIdentifiers>
+<ActivityIdentifiers ActivityAutomationStatus="Development" ActivityGuid="4d6949ee-bd24-4b97-be01-f6fc686eeba9" ActivityName="Do Divide" Guid="548c29d3-0f69-44bf-b596-f8083f881610" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ActivitiesIdentifiers>
+</ActivitiesGroup>
+</ActivitiesGroups>
+
+<TargetApplications>
+<TargetApplication AppName="SOM" Guid="02028612-21b7-4d38-83b7-83e6096468dd" LastExecutingAgentName="Chrome" ParentGuid="00000000-0000-0000-0000-000000000000" />
+<TargetApplication AppName="CPQ" Guid="d1a7835e-7352-4eed-b289-5bf9846ba849" LastExecutingAgentName="WebserviceAgent1" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</TargetApplications>
+
+<Variables>
+<VariableString Description="The main number which will be used for calculations" Guid="162685d7-10de-414e-b7ec-26952fd29cf9" InitialStringValue="10" MappedOutputType="None" Name="MainNum" ParentGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" ParentName="BI_Core4_R3_2" ParentType="Business Flow" Publish="True" SetAsOutputValue="False" />
+<VariableSelectionList Description="Set 'Yes' for performing Sum calculation" Guid="09be2b79-37fc-418c-a194-53c212f64db9" MappedOutputType="None" Name="DoSum?" ParentGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" ParentName="BI_Core4_R3_2" ParentType="Business Flow" Publish="True" SetAsOutputValue="False" Value="Yes">
+<OptionalValuesList>
+<OptionalValue Guid="aad7dab0-3389-4e48-8812-3f02d792ee3a" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Yes" />
+<OptionalValue Guid="2655166e-0833-4d3c-8c46-8a82868f7e24" ParentGuid="00000000-0000-0000-0000-000000000000" Value="No" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Description="Set 'Yes' for performing Multiply calculation" Guid="ae0a73da-817b-435b-8f92-a960412e7ed1" MappedOutputType="None" Name="DoMultiply?" ParentGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" ParentName="BI_Core4_R3_2" ParentType="Business Flow" Publish="True" SetAsOutputValue="False" Value="Yes">
+<OptionalValuesList>
+<OptionalValue Guid="5c8fc0a1-9a8c-4940-987c-c0db04c28fbd" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Yes" />
+<OptionalValue Guid="fb28e3b0-2517-4941-ba0b-83690124a3e4" ParentGuid="00000000-0000-0000-0000-000000000000" Value="No" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableSelectionList Description="Set 'Yes' for performing Divide calculation" Guid="d9f050b3-3535-4b14-8026-f086029b35e9" MappedOutputType="None" Name="DoDivide?" ParentGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" ParentName="BI_Core4_R3_2" ParentType="Business Flow" Publish="True" SetAsOutputValue="False" Value="Yes">
+<OptionalValuesList>
+<OptionalValue Guid="4e842c85-47b1-4034-906f-a15d14646ddf" ParentGuid="00000000-0000-0000-0000-000000000000" Value="Yes" />
+<OptionalValue Guid="a7f5bd8d-594c-43e1-b0b7-7f52cf0c0768" ParentGuid="00000000-0000-0000-0000-000000000000" Value="No" />
+</OptionalValuesList>
+</VariableSelectionList>
+<VariableString Guid="0bc1c01b-5615-4c4b-8d98-9c02163c5bb2" InitialStringValue="69" MappedOutputType="None" Name="RandomCalc" ParentGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" ParentName="BI_Core4_R3_2" ParentType="Business Flow" Publish="True" SetAsInputValue="False" />
+<VariableRandomNumber Guid="8375540b-82f3-4302-852b-8ef81546b010" Interval="0" IsInteger="True" MappedOutputType="None" Max="60" Min="30" Name="RandomNum" ParentGuid="8d4572b1-0058-4bcd-8009-cf7f7be75d9c" ParentName="BI_Core4_R3_2" ParentType="Business Flow" SetAsInputValue="False" SetAsOutputValue="False" />
+</Variables>
+</BusinessFlow></GingerRepositoryItem>
